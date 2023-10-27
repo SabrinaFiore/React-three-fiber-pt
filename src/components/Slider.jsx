@@ -44,7 +44,7 @@ const ClickableProjectSlides = () => {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
+    setCurrentIndex((prevIndex) => 
       prevIndex === 0 ? projectData.length - 1 : prevIndex - 1
     );
   };
@@ -71,16 +71,20 @@ const ClickableProjectSlides = () => {
           ))}
         </div>
         <div className="slide-buttons">
-          <button onClick={prevSlide}>Previous</button>
+          <div className="slider-prev">
+            <button className="slider-prev-btn" onClick={prevSlide}></button>
+          </div>
           {projectData.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={index === currentIndex ? 'active' : ''}>
-              {`Project ${index + 1}`}
+              className={index === currentIndex ? 'active slider-button' : 'slider-button'}>
+              { `Project ${index + 1}` }
             </button>
           ))}
-          <button onClick={nextSlide}>Next</button>
+          <div className="slider-next">
+            <button className="slider-next-btn" onClick={nextSlide}></button>
+          </div>
         </div>
       </div>
       </Container>

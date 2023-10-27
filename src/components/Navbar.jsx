@@ -1,6 +1,6 @@
 import { React } from "react";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Section = styled.div`
   display: flex;
@@ -32,12 +32,14 @@ const Links = styled.div`
 
 const Logo = styled.img`
   height: 50px;
+  margin: 0 1rem;
 `;
 
 const List = styled.ul`
   display: flex;
   gap: 20px;
   list-style: none;
+  color: #fff;
 
   @media only screen and (max-width: 768px) {
     display: none;
@@ -51,7 +53,9 @@ const ListItem = styled.li`
 const Icons = styled.div`
   display: flex;
   align-items: center;
+  justify-content: end;
   gap: 20px;
+  width: 100%;
 `;
 
 const Icon = styled.img`
@@ -60,13 +64,16 @@ const Icon = styled.img`
 `;
 
 const Button = styled.button`
-  width: 100px;
-  padding: 10px;
   background-color: #9E5C63;
   color: white;
+  font-weight: 500;
+  width: 100%;
+  max-width: 120px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: 0 1rem;
 `;
 
 const Navbar = () => {
@@ -75,17 +82,16 @@ const Navbar = () => {
 		<Section>
 			<Container>
 				<Links>
-					<Logo src="./public/img/Logo.png"/>
+          <Link to={"./"}>
+					  <Logo src="./public/img/Logo.png"/>
+          </Link>
 					<List>
-						<ListItem>Home</ListItem>
-						<ListItem>Studio</ListItem>
-						<ListItem>Works</ListItem>
-						<ListItem>Contact</ListItem>
+						{/* <ListItem>Contact</ListItem> */}
 					</List>
 				</Links>
 				<Icons>
 					{/* <Icon src="./public/img/Logo.jpg"/> */}
-					<Button onClick={() => navigate('contact')}>Hire now</Button>
+					<Button onClick={() => navigate('contact')}>Contact</Button>
 				</Icons>
 			</Container>
 		</Section>

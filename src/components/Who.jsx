@@ -28,10 +28,14 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 74px;
+  font-family: 'EB Garamond', serif;
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  line-height: 1;
 
   @media only screen and (max-width: 768px) {
-    font-size: 60px;
+    font-size: 50px;
   }
 `;
 
@@ -59,23 +63,31 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  color: #da4ea2;
+  color: #cd7d85;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
 `;
 
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 `;
 
 const Button = styled.button`
-  background-color: #da4ea2;
+  background-color: #9E5C63;
   color: white;
   font-weight: 500;
-  width: 120px;
+  width: 100%;
+  max-width: 120px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: 0;
 `;
 
 const Img = styled.img``
@@ -97,10 +109,10 @@ const Who = () => {
 				<Right>
 					<Title>Think outside the square space</Title>
 					<WhatWeDo>
-						<Line src=""/>
-						<Subtitle>- Who we are</Subtitle>
+						{/* <Line src=""/>
+						<Subtitle>- Who we are</Subtitle> */}
 					</WhatWeDo>
-					<Desc>A creative group of designers and developers with a passion for the arts.</Desc>
+					{/* <Desc>A creative group of designers and developers with a passion for the arts.</Desc> */}
 					<Button>See our works</Button>
 				</Right>
 			</Container>

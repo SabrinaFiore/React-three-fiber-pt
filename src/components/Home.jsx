@@ -13,10 +13,7 @@ const Container = styled.div`
   overflow-y: auto;
   scrollbar-width: none;
   color: white;
-  background: linear-gradient(to right, #063e56, #001e2d);
-  border-width: 0.5rem;
-  border-style: solid;
-  border-image: linear-gradient(to right, #ffebee, #954f57) 1;
+  
 
 
   &::-webkit-scrollbar {

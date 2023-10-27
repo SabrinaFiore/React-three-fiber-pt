@@ -1,13 +1,6 @@
 import { RenderTexture, Text, PerspectiveCamera } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { React, useRef } from "react";
-import styled from "styled-components";
-
-const Container = styled.div`
-	height: 100vh;
-	width: 100%;
-	scroll-snap-align: center;
-`
 
 const Cube = () => {
 	const textRef = useRef()
@@ -22,8 +15,8 @@ const Cube = () => {
 						makeDefault
 						position={[0, 0, 5]}
 					/>
-					<color attach="background" args={["pink"]} />
-					<Text ref={textRef} fontSize={1} color="#002">Hello</Text>
+					<color attach="background" args={["0x00ff00"]} />
+					<Text ref={textRef} fontSize={0.8} color="#002">Welcome</Text>
 				</RenderTexture>
 			</meshStandardMaterial>
 		</mesh>

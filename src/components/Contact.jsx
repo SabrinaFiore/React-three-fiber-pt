@@ -71,7 +71,6 @@ const Right = styled.div`
   }
 `;
 
-
 const handleSubmit = e => {
 	e.preventDefault()
 }
