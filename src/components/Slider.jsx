@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import React, { useRef, useState, useEffect } from 'react';
-import gsap from 'gsap';
+import { gsap } from "gsap";
+import { Draggable } from "gsap/Draggable";
+
 
 const Section = styled.div`
   height: 100vh;
@@ -14,82 +16,88 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const projectData = [
-  {
-    title: 'Project 1',
-    description: 'Description of Project 1',
-  },
-  {
-    title: 'Project 2',
-    description: 'Description of Project 2',
-  },
-  {
-    title: 'Project 3',
-    description: 'Description of Project 3',
-  },
-];
+gsap.registerPlugin(Draggable);
 
-const ClickableProjectSlides = () => {
-  const sliderRef = useRef(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
+const Carousel = () => {
+  const [curSlide, updateCurSlide] = useState(1);
+  const [slideCount, updateSlideCount] = useState(3);
+  const dragInstance = useRef(null);
+  const dragTarget = useRef(null);
+  const dragBounds = useRef(null);
+  
+  const itemsRef = useRef([
+    {
+      title: 'Project 1',
+      description: 'Description of Project 1',
+    },
+    {
+      title: 'Project 2',
+      description: 'Description of Project 2',
+    },
+    {
+      title: 'Project 3',
+      description: 'Description of Project 3',
+    }
+  ]);
 
   useEffect(() => {
-    const slider = sliderRef.current;
-    const slideWidth = slider.clientWidth;
-    gsap.to(slider, { x: -currentIndex * slideWidth, duration: 0.5 });
-  }, [currentIndex]);
+    dragInstance.current = Draggable.create(dragTarget.current, {
+      type: "scroll",
+      bounds: dragBounds,
+      throwProps: true,
+      dragClickables: true
+    });
+    // Cleanup
+    return () => dragInstance.current[0].kill();
+  }, []);
 
-  const goToSlide = (index) => {
-    setCurrentIndex(index);
+  const onThrow = () => {
+    updateCurrentSlide(itemsRef.current[curSlide]);
+  };
+  
+  const updateCurrentSlide = (slide) => {
+    let slideX = slide.getBoundingClientRect().left;
+    let slideWidth = slide.getBoundingClientRect().width;
+    
+    if (slideX < 0) {
+      updateCurSlide(curSlide + 1);
+    }
+    console.log(curSlide);
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? projectData.length - 1 : prevIndex - 1
-    );
-  };
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === projectData.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  useEffect(() => {
+    dragInstance.current[0].addEventListener("throwupdate", () => {
+      onThrow();
+    });
+        
+  }, [dragInstance]);
 
   return (
     <Section>
       <Container>
-      <div className="slider-container">
-        <div className="slider" ref={sliderRef}>
-          {projectData.map((project, index) => (
-            <div
-              className="slide"
-              key={index}
-              onClick={() => goToSlide(index)}>
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
+        <div ref={dragBounds} className="carousel">
+          {/* <div>
+            {curSlide} of {slideCount}
+          </div> */}
+          <div ref={dragTarget} draggable="true" className="carousel__stage">
+            <div className="slide" ref={el => {itemsRef.current[0] = el}}>
+              <h2>{itemsRef.current[0].title}</h2>
+              <p>{itemsRef.current[0].description}</p>
             </div>
-          ))}
-        </div>
-        <div className="slide-buttons">
-          <div className="slider-prev">
-            <button className="slider-prev-btn" onClick={prevSlide}></button>
+            <div className="slide" ref={el => {itemsRef.current[1] = el}}>
+              <h2>{itemsRef.current[1].title}</h2>
+              <p>{itemsRef.current[1].description}</p>
+            </div>
+            <div className="slide" ref={el => {itemsRef.current[2] = el}}>
+              <h2>{itemsRef.current[2].title}</h2>
+              <p>{itemsRef.current[2].description}</p>
+            </div>
           </div>
-          {projectData.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={index === currentIndex ? 'active slider-button' : 'slider-button'}>
-              { `Project ${index + 1}` }
-            </button>
-          ))}
-          <div className="slider-next">
-            <button className="slider-next-btn" onClick={nextSlide}></button>
-          </div>
+          <div></div>
         </div>
-      </div>
       </Container>
     </Section>
   );
 };
 
-export default ClickableProjectSlides;
+export default Carousel;

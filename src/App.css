@@ -30,7 +30,7 @@ body {
   border-image: linear-gradient(to right, #ffebee, #954f57) 1;
 }
 
-.slider-container {
+/* .slider-container {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -106,4 +106,32 @@ body {
 
 .slider-prev {
  transform: rotate(-45deg);
+} */
+
+
+.carousel {
+  position: relative;
+  opacity: 1;
+  background: red;
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+
+.carousel__stage {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  
+}
+
+
+.slide {
+  display: inline-block;
+  width: 2600px;
+  height: 300px;
+  margin: 20px;
+  background: yellow;
+  padding: 0;
 }
