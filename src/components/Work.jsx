@@ -52,29 +52,21 @@ const Right = styled.div`
   }
 `;
 
-const WhatWeDo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-`;
-
-const Line = styled.img`
-  height: 5px;
-`;
-
-const Subtitle = styled.h2`
-  color: #cd7d85;
-  font-family: 'Roboto', sans-serif;
-  font-size: 25px;
-  font-weight: 400;
-`;
-
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
+`;
+
+const List = styled.ul`
+  color: lightgray;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  list-style-type: none;
 `;
 
 const Button = styled.button`
@@ -92,27 +84,31 @@ const Button = styled.button`
 
 const Img = styled.img``
 
-const Who = () => {
+const Work = () => {
 	return (
 		<Section>
 			<Container>
 				<Left>
-					<Canvas camera={{ fov: 25, position: [5, 5, 5]}}>
+					{/* <Canvas camera={{ fov: 25, position: [5, 5, 5]}}>
 						{/* enableZoom={false} */}
-						<OrbitControls autoRotate></OrbitControls>
+						{/* <OrbitControls autoRotate></OrbitControls>
 						<ambientLight intensity={1} />
-						<directionalLight position={[3,2,1]} />
+						<directionalLight position={[3,2,1]} /> */}
 						<Cube/>
-					</Canvas>
+					{/* </Canvas> */}
 					{/* <Img src="" /> */}
 				</Left>
 				<Right>
-					<Title>Think outside the square space</Title>
-					<WhatWeDo>
-						{/* <Line src=""/>
-						<Subtitle>- Who we are</Subtitle> */}
-					</WhatWeDo>
-					{/* <Desc>A creative group of designers and developers with a passion for the arts.</Desc> */}
+					<Title>Work experice</Title>
+            <Desc> 
+              <List>
+                <li>Senior Analyst - Accenture (still working here)</li>
+                <li>Frontend Developer - Fincons Group</li>
+                <li>Frontend Developer - CREALOGIX Group (Barcelona, Spain)</li>
+                <li>Frontend Developer - Runroom (Barcelona, Spain)</li>
+                <li>UI/UX DesignerUI/UX Designer - Ideare Communication (Rome, Italy)</li>
+              </List>
+            </Desc>
 					<Button>See our works</Button>
 				</Right>
 			</Container>
@@ -120,4 +116,4 @@ const Who = () => {
 	)
 }
 
-export default Who
+export default Work

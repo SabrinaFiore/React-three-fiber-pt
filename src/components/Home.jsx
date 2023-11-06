@@ -2,7 +2,7 @@ import './../App.css';
 import styled from "styled-components";
 import Slider from './Slider';
 import Hero from './Hero';
-import Who from './Who';
+import Work from './Work';
 
 
 // background: center / cover no-repeat url("./public/img/bg-blue-green.jpg");
@@ -26,7 +26,7 @@ function Home() {
     <>
       <Container>
         <Hero/>
-        <Who />
+        <Work />
         <Slider/>
       </Container>
     </>
