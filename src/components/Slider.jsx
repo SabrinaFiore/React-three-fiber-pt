@@ -27,16 +27,20 @@ const Carousel = () => {
   
   const itemsRef = useRef([
     {
-      title: 'Project 1',
+      title: 'KIKO Milano',
       description: 'Description of Project 1',
     },
     {
-      title: 'Project 2',
+      title: 'RTE Player',
       description: 'Description of Project 2',
     },
     {
-      title: 'Project 3',
+      title: 'AlJazira SMART and SAIB Mobile banking',
       description: 'Description of Project 3',
+    },
+    {
+      title: 'Runroom',
+      description: 'Description of Project 4',
     }
   ]);
 
@@ -79,18 +83,35 @@ const Carousel = () => {
           {/* <div>
             {curSlide} of {slideCount}
           </div> */}
+          <h2 className="slide-title">Recently projects where I've worked on</h2>
           <div ref={dragTarget} draggable="true" className="carousel__stage">
             <div className="slide" ref={el => {itemsRef.current[0] = el}}>
-              <h2>{itemsRef.current[0].title}</h2>
-              <p>{itemsRef.current[0].description}</p>
+              <img src="../../img/kikoCosmetics.png" alt="" />
+              <div className="slide-description">
+                <h2>{itemsRef.current[0].title}</h2>
+                <p>{itemsRef.current[0].description}</p>
+              </div>
             </div>
             <div className="slide" ref={el => {itemsRef.current[1] = el}}>
-              <h2>{itemsRef.current[1].title}</h2>
-              <p>{itemsRef.current[1].description}</p>
+              <img src="../../img/rte-2024-img.png" alt="" />
+              <div className="slide-description">
+                <h2>{itemsRef.current[1].title}</h2>
+                <p>{itemsRef.current[1].description}</p>
+              </div>
             </div>
             <div className="slide" ref={el => {itemsRef.current[2] = el}}>
-              <h2>{itemsRef.current[2].title}</h2>
-              <p>{itemsRef.current[2].description}</p>
+              <img src="../../img/aljazira.png" alt="" />
+              <div className="slide-description">
+                <h2>{itemsRef.current[2].title}</h2>
+                <p>{itemsRef.current[2].description}</p>
+              </div>
+            </div>
+            <div className="slide" ref={el => {itemsRef.current[3] = el}}>
+              <img src="../../img/runroom-00.png" alt="" />
+              <div className="slide-description">
+                <h2>{itemsRef.current[3].title}</h2>
+                <p>{itemsRef.current[3].description}</p>
+              </div>
             </div>
           </div>
           <div></div>

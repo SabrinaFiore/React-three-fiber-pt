@@ -1,7 +1,5 @@
 import { React } from "react";
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import Cube from "./Cube";
+import ShaderMaterialImg from "./ShaderMaterialImg";
 import styled from "styled-components";
 
 const Section = styled.div`
@@ -89,24 +87,17 @@ const Work = () => {
 		<Section>
 			<Container>
 				<Left>
-					{/* <Canvas camera={{ fov: 25, position: [5, 5, 5]}}>
-						{/* enableZoom={false} */}
-						{/* <OrbitControls autoRotate></OrbitControls>
-						<ambientLight intensity={1} />
-						<directionalLight position={[3,2,1]} /> */}
-						<Cube/>
-					{/* </Canvas> */}
-					{/* <Img src="" /> */}
+					<ShaderMaterialImg/>
 				</Left>
 				<Right>
 					<Title>Work experice</Title>
             <Desc> 
               <List>
-                <li>Senior Analyst - Accenture (still working here)</li>
-                <li>Frontend Developer - Fincons Group</li>
-                <li>Frontend Developer - CREALOGIX Group (Barcelona, Spain)</li>
-                <li>Frontend Developer - Runroom (Barcelona, Spain)</li>
-                <li>UI/UX DesignerUI/UX Designer - Ideare Communication (Rome, Italy)</li>
+                <li>01. Senior Analyst - Accenture (still working here)</li>
+                <li>02. Frontend Developer - Fincons Group</li>
+                <li>03. Frontend Developer - CREALOGIX Group (Barcelona, Spain)</li>
+                <li>04. Frontend Developer - Runroom (Barcelona, Spain)</li>
+                <li>05. UI/UX DesignerUI/UX Designer - Ideare Communication (Rome, Italy)</li>
               </List>
             </Desc>
 					<Button>See our works</Button>
