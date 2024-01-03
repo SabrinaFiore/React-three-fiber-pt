@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import React, { useRef, useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
-
 
 const Section = styled.div`
   height: 100vh;
@@ -16,9 +16,22 @@ const Container = styled.div`
   align-items: center;
 `;
 
+const Button = styled.button`
+  background-color: #9E5C63;
+  color: white;
+  font-weight: 500;
+  
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem 0;
+`;
+
 gsap.registerPlugin(Draggable);
 
 const Carousel = () => {
+  const navigate = useNavigate()
   const [curSlide, updateCurSlide] = useState(1);
   const [slideCount, updateSlideCount] = useState(3);
   const dragInstance = useRef(null);
@@ -90,6 +103,7 @@ const Carousel = () => {
               <div className="slide-description">
                 <h2>{itemsRef.current[0].title}</h2>
                 <p>{itemsRef.current[0].description}</p>
+                <Button onClick={() => navigate('case01')}>Read more about the case</Button>
               </div>
             </div>
             <div className="slide" ref={el => {itemsRef.current[1] = el}}>
@@ -97,6 +111,7 @@ const Carousel = () => {
               <div className="slide-description">
                 <h2>{itemsRef.current[1].title}</h2>
                 <p>{itemsRef.current[1].description}</p>
+                <Button onClick={() => navigate('case01')}>Read more about the case</Button>
               </div>
             </div>
             <div className="slide" ref={el => {itemsRef.current[2] = el}}>
@@ -104,6 +119,7 @@ const Carousel = () => {
               <div className="slide-description">
                 <h2>{itemsRef.current[2].title}</h2>
                 <p>{itemsRef.current[2].description}</p>
+                <Button onClick={() => navigate('case01')}>Read more about the case</Button>
               </div>
             </div>
             <div className="slide" ref={el => {itemsRef.current[3] = el}}>
@@ -111,6 +127,7 @@ const Carousel = () => {
               <div className="slide-description">
                 <h2>{itemsRef.current[3].title}</h2>
                 <p>{itemsRef.current[3].description}</p>
+                <Button onClick={() => navigate('case01')}>Read more about the case</Button>
               </div>
             </div>
           </div>

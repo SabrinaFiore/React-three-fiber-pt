@@ -25,9 +25,10 @@ const Container = styled.div`
 `;
 
 const Links = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
 `;
 
 const Logo = styled.img`
@@ -37,7 +38,7 @@ const Logo = styled.img`
 
 const List = styled.ul`
   display: flex;
-  gap: 20px;
+  align-items: center;
   list-style: none;
   color: #fff;
 
@@ -82,11 +83,11 @@ const Navbar = () => {
 		<Section>
 			<Container>
 				<Links>
-          <Link to={"./"}>
-					  <Logo src="./public/img/Logo.png"/>
-          </Link>
 					<List>
-						{/* <ListItem>Contact</ListItem> */}
+            <Link to={"./"}>
+              <Logo src="./public/img/Logo.png"/>
+            </Link>
+						<ListItem>Sabrina.</ListItem>
 					</List>
 				</Links>
 				<Icons>

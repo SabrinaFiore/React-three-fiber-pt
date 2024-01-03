@@ -11,14 +11,16 @@ const Container = styled.div`
   height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 `;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
   @media only screen and (max-width: 768px) {
     justify-content: center;
   }
@@ -26,31 +28,6 @@ const Left = styled.div`
 
 const Title = styled.h1`
   font-weight: 200;
-`;
-
-const Form = styled.form`
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-
-  @media only screen and (max-width: 768px) {
-    width: 300px;
-  }
-`;
-
-const Input = styled.input`
-  padding: 20px;
-  background-color: #e8e6e6;
-  border: none;
-  border-radius: 5px;
-`;
-
-const TextArea = styled.textarea`
-  padding: 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #e8e6e6;
 `;
 
 const Button = styled.button`
@@ -65,10 +42,6 @@ const Button = styled.button`
 
 const Right = styled.div`
   flex: 1;
-
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 const handleSubmit = e => {
@@ -80,22 +53,21 @@ const Contact = () => {
 		<Section>
       <Container>
         <Left>
-          <Form onSubmit={handleSubmit}>
-            <Title>Contact Us</Title>
-            <Input placeholder="Name" name="name" />
-            <Input placeholder="Email" name="email" />
-            <TextArea
-              placeholder="Write your message"
-              name="message"
-              rows={10}
-            />
-            <Button type="submit">Send</Button>
-            {/* {success &&
-              "Your message has been sent. We'll get back to you soon :)"} */}
-          </Form>
+          <Title>Available to talk about new opportunities</Title>
         </Left>
         <Right>
-          Map
+        <div>
+          <h2>Let's keep in touch!</h2>
+          <h4>Email</h4>
+          <p><a class="link" href="mailto:sabrinafiore1992@gmail.com" target="_blank">sabrinafiore1992@gmail.com</a></p>
+          <div></div>
+          <h4>Follow me</h4>
+          <div>
+            <p><a href="https://www.linkedin.com/in/sabrina-fiore-8437a657/" target="_blank">Linkedin</a></p>
+            <p><a href="https://github.com/SabrinaFiore" target="_blank">Github</a></p>
+            <p><a href="https://www.instagram.com/sabrinafiore_dev/" target="_blank">Instagram</a></p>
+          </div>
+        </div>
         </Right>
       </Container>
     </Section>
