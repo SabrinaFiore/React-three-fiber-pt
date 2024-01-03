@@ -30,10 +30,12 @@ body {
 
 /* Slide component */
 .body-bg {
-  background: linear-gradient(to right, #063e56, #001e2d);
+  /* background: linear-gradient(to right, #063e56, #001e2d); */
+  background: linear-gradient(to right top, #042a3a, #06232f, #081c25, #06161b, #010d11);
   border-width: 0.5rem;
   border-style: solid;
-  border-image: linear-gradient(to right, #ffebee, #954f57) 1;
+  /* border-image: linear-gradient(to right, #ffebee, #954f57) 1; */
+  border-image: linear-gradient(to right, #063e56, #001e2d) 1;
 }
 
 .carousel {
@@ -105,41 +107,24 @@ body {
   margin: 2rem;
 }
 
-
 .hero {
-  /* visibility: hidden; */
-  height: 100vh;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.container {
-  width: 1440px;
-  min-width: 1440px;
-  margin: 0 auto;
+.hero-container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero-inner {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 24px;
-  height: 100vh;
-}
-
-.hero-content {
-  /* Content text 50% */
-  width: 50%;
-}
-
-.hero-content-inner {
-  width: 400px;
+  align-content: center;
   color: #fff;
-  margin: 0 auto;
-}
-
-.hero-images {
-  width: 50%;
-  height: 100vh;
-  position: relative;
 }
 
 .hero-image {
@@ -147,11 +132,3 @@ body {
   overflow: hidden;
 }
 
-.hero-image.projectImg img {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  right: 0px;
-}

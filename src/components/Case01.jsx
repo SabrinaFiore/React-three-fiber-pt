@@ -27,7 +27,7 @@ const Case01 = () => {
 
   return (
     <div className="hero" ref={app}>
-      <div className="container">
+      <div className="hero-container">
         <div className="hero-inner">
           <div className="hero-content">
             <div className="hero-content-inner" ref={content}>
@@ -48,13 +48,11 @@ const Case01 = () => {
               </p>
             </div>
           </div>
-          <div className="hero-images">
-            <div className="hero-images-inner" ref={images}>
-              <div className="hero-image projectImg">
-                <img src={imgProject} alt="projectImg" style={{ visibility: 'hidden' }} />
-              </div>
+        </div>
+        <div className="hero-images">
+            <div className="hero-image projectImg" ref={images}>
+              <img src={imgProject} alt="projectImg" style={{ visibility: 'hidden' }} />
             </div>
-          </div>
         </div>
       </div>
     </div>

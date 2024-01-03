@@ -1,8 +1,8 @@
 import './../App.css';
 import styled from "styled-components";
-import Slider from './Slider';
 import Hero from './Hero';
 import Work from './Work';
+import Carousel from './Carousel';
 
 
 // background: center / cover no-repeat url("./public/img/bg-blue-green.jpg");
@@ -14,8 +14,6 @@ const Container = styled.div`
   scrollbar-width: none;
   color: white;
   
-
-
   &::-webkit-scrollbar {
     display: none;
   }
@@ -27,7 +25,7 @@ function Home() {
       <Container>
         <Hero/>
         <Work />
-        <Slider/>
+        <Carousel/>
       </Container>
     </>
   )

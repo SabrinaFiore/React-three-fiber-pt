@@ -100,7 +100,7 @@ const Work = () => {
                 <li>05. UI/UX DesignerUI/UX Designer - Ideare Communication (Rome, Italy)</li>
               </List>
             </Desc>
-					<Button>See our works</Button>
+					Scroll down to see more
 				</Right>
 			</Container>
 		</Section>
