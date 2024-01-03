@@ -4,8 +4,6 @@ import Hero from './Hero';
 import Work from './Work';
 import Carousel from './Carousel';
 
-
-// background: center / cover no-repeat url("./public/img/bg-blue-green.jpg");
 const Container = styled.div`
   height: 100vh;
   scroll-snap-type: y mandatory;

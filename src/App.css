@@ -132,3 +132,8 @@ body {
   overflow: hidden;
 }
 
+.linkEmail, 
+.linkSocial {
+  text-decoration: none; 
+  color: unset;
+}

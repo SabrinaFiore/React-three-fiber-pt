@@ -7,7 +7,6 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -16,6 +15,7 @@ const Container = styled.div`
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  color: #fff;
 `;
 
 const Left = styled.div`
@@ -27,21 +27,44 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-weight: 200;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  font-weight: 300;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 40px;
+  }
 `;
 
-const Button = styled.button`
-  background-color: #da4ea2;
-  color: white;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 20px;
-`;
 
 const Right = styled.div`
   flex: 1;
+`;
+const Subtitle = styled.h2`
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 1rem 0;
+`;
+const Email = styled.h4`
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 1rem;
+
+  text-decoration: none; 
+`;
+const FollowMe = styled.h4`
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 1rem;
+`;
+const Description = styled.p`
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
 `;
 
 const handleSubmit = e => {
@@ -53,21 +76,20 @@ const Contact = () => {
 		<Section>
       <Container>
         <Left>
-          <Title>Available to talk about new opportunities</Title>
+          <Title>Available to talk about new opportunities!</Title>
         </Left>
         <Right>
-        <div>
-          <h2>Let's keep in touch!</h2>
-          <h4>Email</h4>
-          <p><a class="link" href="mailto:sabrinafiore1992@gmail.com" target="_blank">sabrinafiore1992@gmail.com</a></p>
-          <div></div>
-          <h4>Follow me</h4>
           <div>
-            <p><a href="https://www.linkedin.com/in/sabrina-fiore-8437a657/" target="_blank">Linkedin</a></p>
-            <p><a href="https://github.com/SabrinaFiore" target="_blank">Github</a></p>
-            <p><a href="https://www.instagram.com/sabrinafiore_dev/" target="_blank">Instagram</a></p>
+            <Subtitle>Let's keep in touch!</Subtitle>
+            <Email>Email</Email>
+              <a className="linkEmail" href="mailto:sabrinafiore1992@gmail.com" target="_blank">sabrinafiore1992@gmail.com</a>
+            <FollowMe>Follow me</FollowMe>
+            <Description>
+              <p><a className="linkSocial" href="https://www.linkedin.com/in/sabrina-fiore-8437a657/" target="_blank">Linkedin</a></p>
+              <p><a className="linkSocial" href="https://github.com/SabrinaFiore" target="_blank">Github</a></p>
+              <p><a className="linkSocial" href="https://www.instagram.com/sabrinafiore_dev/" target="_blank">Instagram</a></p>
+            </Description>
           </div>
-        </div>
         </Right>
       </Container>
     </Section>
