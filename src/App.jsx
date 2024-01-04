@@ -6,7 +6,7 @@ import AboutMe from './components/About-me';
 import Navbar from './components/Navbar';
 import Case01 from './components/Case01';
 import Carousel from './components/Carousel';
-
+import NoCodeProjects from './components/NoCodeProjects';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
             <Route path='about-me' element={<AboutMe />}></Route>
             <Route path='case01' element={<Case01 />}></Route>
             <Route path='carousel' element={<Carousel />}></Route>
+            <Route path='noCodeProject' element={<NoCodeProjects />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

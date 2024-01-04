@@ -65,11 +65,11 @@ const Icon = styled.img`
 `;
 
 const Button = styled.button`
-  background-color: #9E5C63;
+  background-color: transparent;
   color: white;
   font-weight: 500;
   width: 100%;
-  max-width: 120px;
+  max-width: 200px;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -93,6 +93,7 @@ const Navbar = () => {
 				<Icons>
 					{/* <Icon src="./public/img/Logo.jpg"/> */}
 					<Button onClick={() => navigate('contact')}>Contact</Button>
+					<Button onClick={() => navigate('noCodeProject')}>No Code Projects</Button>
 				</Icons>
 			</Container>
 		</Section>

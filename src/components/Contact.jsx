@@ -37,16 +37,17 @@ const Title = styled.h1`
   }
 `;
 
-
 const Right = styled.div`
   flex: 1;
 `;
+
 const Subtitle = styled.h2`
   font-family: 'EB Garamond', serif;
   font-size: 20px;
   font-weight: 600;
   padding: 1rem 0;
 `;
+
 const Email = styled.h4`
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -55,12 +56,14 @@ const Email = styled.h4`
 
   text-decoration: none; 
 `;
+
 const FollowMe = styled.h4`
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 600;
   padding-top: 1rem;
 `;
+
 const Description = styled.p`
   font-family: 'Roboto', sans-serif;
   font-size: 14px;

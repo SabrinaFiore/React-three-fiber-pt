@@ -70,16 +70,16 @@ const Line = styled.img`
 
 const Subtitle = styled.h2`
   color: #cd7d85;
-  font-family: 'Roboto', sans-serif;
-  font-size: 25px;
+  font-family: 'Avenir', sans-serif;
+  font-size: 20px;
   font-weight: 400;
 `;
 
 const Desc = styled.p`
-  font-size: 24px;
+  font-size: 20px;
   color: lightgray;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 300;
 
   @media only screen and (max-width: 768px) {
     padding: 20px;
@@ -141,7 +141,7 @@ const Hero = () => {
 		<Section>
 			<Container>
 				<Left>
-					<Title>Welcome to my space.</Title>
+					<Title>Welcome to my space!</Title>
 					<WhatWeDo>
 						<Line src=""/>
 						<Subtitle>- I'm Sabrina. Designer and Front-End Developer</Subtitle>
@@ -152,14 +152,14 @@ const Hero = () => {
 				<Right>
 					<Canvas>
             <Suspense fallback={null}>
-              <OrbitControls enableZoom={false} />
-              <ambientLight intensity={1} />
+              <OrbitControls enableZoom={true} />
+              <ambientLight intensity={1.5} />
               <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.8}>
+              <Sphere args={[1, 50, 50]} scale={1.8}>
                 <MeshDistortMaterial
                   color="#3d1c56"
                   attach="material"
-                  distort={0.5}
+                  distort={0.6}
                   speed={2}
                 />
               </Sphere>

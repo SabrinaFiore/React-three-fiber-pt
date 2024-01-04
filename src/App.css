@@ -133,7 +133,8 @@ body {
 }
 
 .linkEmail, 
-.linkSocial {
+.linkSocial,
+.linkHomePage {
   text-decoration: none; 
   color: unset;
 }
