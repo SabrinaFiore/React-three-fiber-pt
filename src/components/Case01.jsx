@@ -1,6 +1,52 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import imgProject from '../../public/img/Img1.jpg';
+import styled from "styled-components";
+
+const Container = styled.div`
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const HeroInner = styled.div`
+  display: flex;
+  align-content: center;
+  color: #3d3b3b;
+`;
+
+const Title = styled.h1`
+  font-family: 'EB Garamond', serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+`;
+
+const Desc = styled.p`
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 0.5rem;
+`;
+
+const List = styled.ul`
+  list-style-type: none;
+  color: #3d3b3b;
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding-top: 2rem;
+`;
+
+const ListItem = styled.li`
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5rem;
+`;
 
 const Case01 = () => {
   const app = useRef(null);
@@ -27,34 +73,29 @@ const Case01 = () => {
 
   return (
     <div className="hero" ref={app}>
-      <div className="hero-container">
-        <div className="hero-inner">
+      <Container>
+        <HeroInner>
           <div className="hero-content">
             <div className="hero-content-inner" ref={content}>
-              <h1>
-                <div className="hero-content-line">
-                  <div className="hero-content-line-inner">Relieving the burden</div>
-                </div>
-                <div className="hero-content-line">
-                  <div className="hero-content-line-inner">of disease caused</div>
-                </div>
-                <div className="hero-content-line">
-                  <div className="hero-content-line-inner">by behaviors.</div>
-                </div>
-              </h1>
-              <p>
-                Better treats serious cardiometabolic diseases to transform lives and reduce
-                healthcare utilization through the use of digital therapeutics.
-              </p>
+              <Title>KIKO MILANO</Title>
+              <Desc>
+                Project Description
+              </Desc>
+              <List>
+                What technologies did we use?
+                <ListItem>Lorem Ipsum</ListItem>
+                <ListItem>Lorem Ipsum</ListItem>
+                <ListItem>Lorem Ipsum</ListItem>
+              </List>
             </div>
           </div>
-        </div>
+        </HeroInner>
         <div className="hero-images">
-            <div className="hero-image projectImg" ref={images}>
-              <img src={imgProject} alt="projectImg" style={{ visibility: 'hidden' }} />
-            </div>
+          <div className="hero-image projectImg" ref={images}>
+            <img src={imgProject} alt="projectImg" style={{ visibility: 'hidden' }} />
+          </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

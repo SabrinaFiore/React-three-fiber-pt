@@ -7,6 +7,9 @@ import Navbar from './components/Navbar';
 import Case01 from './components/Case01';
 import Carousel from './components/Carousel';
 import NoCodeProjects from './components/NoCodeProjects';
+import Case02 from './components/Case02';
+import Case03 from './components/Case03';
+import Case04 from './components/Case04';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
             <Route path='contact' element={<Contact />}></Route>
             <Route path='about-me' element={<AboutMe />}></Route>
             <Route path='case01' element={<Case01 />}></Route>
+            <Route path='case02' element={<Case02 />}></Route>
+            <Route path='case03' element={<Case03 />}></Route>
+            <Route path='case04' element={<Case04 />}></Route>
             <Route path='carousel' element={<Carousel />}></Route>
             <Route path='noCodeProject' element={<NoCodeProjects />}></Route>
           </Routes>

@@ -118,20 +118,6 @@ body {
   margin: 0 auto;
 }
 
-.hero-container {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hero-inner {
-  display: flex;
-  align-content: center;
-  color: #3d3b3b;
-}
-
 .hero-image {
   /* position: absolute; */
   overflow: hidden;

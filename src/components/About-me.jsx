@@ -38,13 +38,6 @@ const Title = styled.h3`
   }
 `;
 
-const Subtitle = styled.h2`
-  color: #cd7d85;
-  font-family: 'Roboto', sans-serif;
-  font-size: 25px;
-  font-weight: 400;
-`;
-
 const Desc = styled.p`
   font-size: 16px;
   color: #3d3b3b;
@@ -59,24 +52,34 @@ const Desc = styled.p`
   }
 `;
 
+const Paragraph = styled.p`
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 1rem;
+`;
+
 const AboutMe = () => {
 	return (
 		<Section>
       <Container>
         <Title>About me</Title>
         <Desc className="wrapper">
-          <span>I work as a Front End Developer and I designed this portfolio to combine my knowledge about UI-Design and Front-End Development.</span> <br></br>
-          <span>I was born in Bari, Southern Italy, on May 19th, 1992.</span>
-          <span>I attended the Academy of Fine Arts in Rome in 2011, where I started to elaborate my interest
-            in graphic arts on a deep level. In 2017 I studied in Barcelona, where I developed my
-            knowledge in coding and I approached the Hi-tech's world working as a Front-End Developer. Meantime I
-            never stopped working on my photography and graphic art interests.
-          </span> <br></br>
-          <span>
-            Because of my background which allow me to be very sensitive to design details I'm constantly improving 
-            my Autodidact Creative Developer's and UI Developer knowledge also because I have a serious passion for
-            and creating intuitive, dynamic user experiences.
-          </span>
+          <Paragraph>
+            I work as a Front End Developer, actually I designed this portfolio to combine my knowledge about UI-Design and Front-End. 
+            I am originally from Southern Italy and I traveled quite a bit to complete my education and knowledge. </Paragraph>
+          <Paragraph>
+            I attended the Academy of Fine Arts in Rome in 2011, where I started to elaborate my interest in graphic arts on a deep level. 
+            Then, in 2017 I moved to Barcelona to attend a Master's degree. During the course I developed my knowledge in coding, also I have approached the Hi-tech's world working as a Front-End Developer. Meantime I never stopped working on my photography and graphic art interests.
+          </Paragraph> 
+          <Paragraph>
+            When I was starting my career in software development, I dedicated a lot of time to expanding my technical knowledge by reading books, taking online courses, and it was (and it is) a continuous learning day by day. <br></br>
+            My first position was as a Junior developer in a company in Barcelona. I had so many things to learn that were so tough and interesting at the same time. For the first time I worked in an Agile Team with UI and UX designers, Back End Developers, Front End Developers, Product Owners and Managers. 
+            In the next company I learn how to work with complex architectures using framework like Angular and implementing and also creating a UI components library.
+          </Paragraph>
+          <Paragraph>
+            My experience and knowledge about designing a web/app application allow me moving to the management part to apply my skills to the entire project, actually I am very interested in learning more about it.
+          </Paragraph>
         </Desc>
       </Container>
     </Section>

@@ -99,7 +99,7 @@ const Carousel = () => {
           <h2 className="slide-title">Recently projects where I've worked on</h2>
           <div ref={dragTarget} draggable="true" className="carousel__stage">
             <div className="slide" ref={el => {itemsRef.current[0] = el}}>
-              <img src="../../img/kikoCosmetics.png" alt="" />
+              <img src="../../img/kikoMilano.png" alt="" />
               <div className="slide-description">
                 <h2>{itemsRef.current[0].title}</h2>
                 <p>{itemsRef.current[0].description}</p>
@@ -111,7 +111,7 @@ const Carousel = () => {
               <div className="slide-description">
                 <h2>{itemsRef.current[1].title}</h2>
                 <p>{itemsRef.current[1].description}</p>
-                <Button onClick={() => navigate('case01')}>Read more about the case</Button>
+                <Button onClick={() => navigate('case02')}>Read more about the case</Button>
               </div>
             </div>
             <div className="slide" ref={el => {itemsRef.current[2] = el}}>
@@ -119,7 +119,7 @@ const Carousel = () => {
               <div className="slide-description">
                 <h2>{itemsRef.current[2].title}</h2>
                 <p>{itemsRef.current[2].description}</p>
-                <Button onClick={() => navigate('case01')}>Read more about the case</Button>
+                <Button onClick={() => navigate('case03')}>Read more about the case</Button>
               </div>
             </div>
             <div className="slide" ref={el => {itemsRef.current[3] = el}}>
@@ -127,7 +127,7 @@ const Carousel = () => {
               <div className="slide-description">
                 <h2>{itemsRef.current[3].title}</h2>
                 <p>{itemsRef.current[3].description}</p>
-                <Button onClick={() => navigate('case01')}>Read more about the case</Button>
+                <Button onClick={() => navigate('case04')}>Read more about the case</Button>
               </div>
             </div>
           </div>
