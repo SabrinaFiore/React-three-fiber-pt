@@ -72,12 +72,12 @@ const Subtitle = styled.h2`
   color: #cd7d85;
   font-family: 'Avenir', sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 `;
 
 const Desc = styled.p`
-  font-size: 20px;
-  color: lightgray;
+  font-size: 16px;
+  color: #3d3b3b;
   font-family: 'Avenir', sans-serif;
   font-weight: 300;
 
@@ -89,7 +89,7 @@ const Desc = styled.p`
 
 const Button = styled.button`
   background-color: #9E5C63;
-  color: white;
+  color: #fff;
   font-weight: 500;
   width: 100%;
   max-width: 120px;
@@ -144,9 +144,11 @@ const Hero = () => {
 					<Title>Welcome to my space!</Title>
 					<WhatWeDo>
 						<Line src=""/>
-						<Subtitle>- I'm Sabrina. Designer and Front-End Developer</Subtitle>
+						<Subtitle>- I'm Sabrina. UI-UX Designer and Front-End Developer</Subtitle>
 					</WhatWeDo>
-					<Desc>I really enjoy creating good designed, human-centered and useful experience</Desc>
+					<Desc>I enjoy creating well-designed, human-centered experiences.
+          <br></br> I developed my web page to put together all my interests. Have a pleasant time around here!
+          </Desc>
           <Button onClick={() => navigate('about-me')}>About me</Button>
 				</Left>
 				<Right>

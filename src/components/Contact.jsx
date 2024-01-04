@@ -15,7 +15,7 @@ const Container = styled.div`
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  color: #fff;
+  color: #3d3b3b;
 `;
 
 const Left = styled.div`
@@ -88,9 +88,9 @@ const Contact = () => {
               <a className="linkEmail" href="mailto:sabrinafiore1992@gmail.com" target="_blank">sabrinafiore1992@gmail.com</a>
             <FollowMe>Follow me</FollowMe>
             <Description>
-              <p><a className="linkSocial" href="https://www.linkedin.com/in/sabrina-fiore-8437a657/" target="_blank">Linkedin</a></p>
-              <p><a className="linkSocial" href="https://github.com/SabrinaFiore" target="_blank">Github</a></p>
-              <p><a className="linkSocial" href="https://www.instagram.com/sabrinafiore_dev/" target="_blank">Instagram</a></p>
+              <p><a className="linkSocial underline" href="https://www.linkedin.com/in/sabrina-fiore-8437a657/" target="_blank">Linkedin</a></p>
+              <p><a className="linkSocial underline" href="https://github.com/SabrinaFiore" target="_blank">Github</a></p>
+              <p><a className="linkSocial underline" href="https://www.instagram.com/sabrinafiore_dev/" target="_blank">Instagram</a></p>
             </Description>
           </div>
         </Right>

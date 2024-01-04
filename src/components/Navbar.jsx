@@ -40,7 +40,7 @@ const List = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
-  color: #fff;
+  color: #3d3b3b;
 
   @media only screen and (max-width: 768px) {
     display: none;
@@ -66,7 +66,7 @@ const Icon = styled.img`
 
 const Button = styled.button`
   background-color: transparent;
-  color: white;
+  color: #3d3b3b;
   font-weight: 500;
   width: 100%;
   max-width: 200px;
@@ -92,8 +92,8 @@ const Navbar = () => {
 				</Links>
 				<Icons>
 					{/* <Icon src="./public/img/Logo.jpg"/> */}
-					<Button onClick={() => navigate('contact')}>Contact</Button>
 					<Button onClick={() => navigate('noCodeProject')}>No Code Projects</Button>
+					<Button onClick={() => navigate('contact')}>Contact</Button>
 				</Icons>
 			</Container>
 		</Section>

@@ -10,7 +10,7 @@ const Container = styled.div`
   scroll-behavior: smooth;
   overflow-y: auto;
   scrollbar-width: none;
-  color: white;
+  color: #3d3b3b;
   
   &::-webkit-scrollbar {
     display: none;

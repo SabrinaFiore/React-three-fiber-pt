@@ -24,7 +24,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h3`
-  color: lightgray;
+  color: #3d3b3b;
   font-family: 'EB Garamond', serif;
   font-size: 30px;
   font-weight: 300;
@@ -47,7 +47,7 @@ const Subtitle = styled.h2`
 
 const Desc = styled.p`
   font-size: 16px;
-  color: lightgray;
+  color: #3d3b3b;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin-bottom: 3rem;

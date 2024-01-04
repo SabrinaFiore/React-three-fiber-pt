@@ -59,7 +59,7 @@ const Desc = styled.p`
 `;
 
 const List = styled.ul`
-  color: lightgray;
+  color: #3d3b3b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -67,9 +67,16 @@ const List = styled.ul`
   list-style-type: none;
 `;
 
+const Action = styled.p`
+  color: #cd7d85;
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+`;
+
 const Button = styled.button`
   background-color: #9E5C63;
-  color: white;
+  color: #fff;
   font-weight: 500;
   width: 100%;
   max-width: 120px;
@@ -100,7 +107,7 @@ const Work = () => {
                 <li>05. UI/UX DesignerUI/UX Designer - Ideare Communication (Rome, Italy)</li>
               </List>
             </Desc>
-					Scroll down to see more
+					<Action>Scroll down to see more</Action>
 				</Right>
 			</Container>
 		</Section>

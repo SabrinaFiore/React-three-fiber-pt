@@ -1,8 +1,9 @@
 import { React } from "react";
 import styled from "styled-components";
+import { Link, useNavigate } from "react-router-dom";
 
 const Section = styled.div`
-  height: 100vh;
+  height: 100%;
   scroll-snap-align: center;
 `;
 
@@ -10,13 +11,16 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  color: #fff;
+  color: #3d3b3b;
 `;
 
 const Title = styled.h1`
+  display: flex;
+  justify-content: center;
   font-family: 'EB Garamond', serif;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 300;
+  line-height: 1;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -24,14 +28,29 @@ const Title = styled.h1`
   }
 `;
 
-const Gallery = styled.div`
-
+const Subtitle = styled.h3`
+  font-family: 'Avenir', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 0.5rem;
+  margin-top: 3rem;
 `;
+
+const Desc = styled.p`
+  font-size: 16px;
+  color: #3d3b3b;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 300;
+  padding-left: 0.5rem;
+`;
+
+const Gallery = styled.div``;
 
 const Img = styled.img`
   width: 400px; 
   height: 400px; 
   object-fit: cover;
+  padding: 0.5rem;
 `;
 
 const GridND = styled.div`
@@ -66,33 +85,38 @@ const GalleryBRL = styled.div`
   }
 `;
 
-
 const NoCodeProjects = () => {
 	return (
 		<Section>
       <Container>
-        <Title>No Code Projects</Title>
-        <Gallery>
-            ND AWARDS
-          <GridND>
-            <Img src="https://images.unsplash.com/photo-1558981033-0f0309284409?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="bike" />
-            <Img src="https://images.unsplash.com/photo-1580820726687-30e7ba70d976?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="rose"/>
-            <Img src="https://images.unsplash.com/photo-1580769154185-abdda4691da5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="camera"/>
-            <Img src="https://images.unsplash.com/photo-1580732055671-e64dde2eb75b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="road"/>
-            <Img src="https://images.unsplash.com/photo-1580785422463-c88da52a2922?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="night-1927265_960_720"/>
-            <Img src="https://images.unsplash.com/photo-1580785422463-c88da52a2922?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="night-1927265_960_720"/>
-          </GridND>
+        <Title>Photography Contest</Title>
+          <Gallery>
+            <Subtitle>ND Awards</Subtitle> 
+            <Desc>Is a photography magazine, founded in 2008.
+              <br></br>
+              Check out my work on&nbsp;
+              <a className="linkNoCodeProjects underline" href="https://ndawards.net/winners-gallery/nd-awards-2020/non-professional/conceptual/hm/13577/" target="_blank" rel="noopener noreferrer">the ND Awards Page</a>
+            </Desc>
+            <GridND>
+              <Img src="../../img/IMG03.jpg" alt="hamburg03" />
+              <Img src="../../img/IMG04.jpg" alt="hamburg04"/>
+              <Img src="../../img/IMG05.jpg" alt="hamburg05"/>
+              <Img src="../../img/IMG06.jpg" alt="hamburg06"/>
+              <Img src="../../img/IMG07.jpg" alt="hamburg07"/>
+            </GridND>
             
-            Berlino
-          <GalleryBRL>
-            <Img src="https://images.unsplash.com/photo-1558666831-d43129d768b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="sunset"/>
-            <Img src="https://images.unsplash.com/photo-1580793660347-5cc5e9d2c6dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="model"/>
-            <Img src="https://images.unsplash.com/photo-1580761072152-9d6b9c77cf4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="bird"/>
-            <Img src="https://images.unsplash.com/photo-1580794592903-65ebe8345cd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="car"/>
-            <Img src="https://images.unsplash.com/photo-1580820726687-30e7ba70d976?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="rose"/>
-            <Img src="https://images.unsplash.com/photo-1580820726687-30e7ba70d976?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="rose"/>
-          </GalleryBRL>
-        </Gallery>
+            <Subtitle>The Holy Art</Subtitle> 
+            <Desc>The Holy Art Gallery is a global leader in the art world, featuring the works of the most talented emerging and established artists from around the globe with branches in London, New York, Athens and Berlin!
+              <br></br>
+              My exposition on 21-22-23 December 2023 in Berlin was about some of these photos, check out&nbsp;
+              <a className="linkNoCodeProjects underline" href="https://www.theholyart.com/journal/newyork" target="_blank" rel="noopener noreferrer">the holy art page</a>
+            </Desc>
+            <GalleryBRL>
+              <Img src="../../img/IMG08.jpg" alt="nk01"/>
+              <Img src="../../img/IMG09.jpg" alt="nk02"/>
+              <Img src="../../img/IMG10.jpg" alt="nk03"/>
+            </GalleryBRL>
+          </Gallery>
       </Container>
     </Section>
 	)
