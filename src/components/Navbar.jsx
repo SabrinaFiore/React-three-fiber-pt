@@ -21,6 +21,11 @@ const Container = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
     padding: 10px;
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    background: #f0f0f0;
+    z-index: 2;
   }
 `;
 
@@ -41,14 +46,14 @@ const List = styled.ul`
   align-items: center;
   list-style: none;
   color: #3d3b3b;
-
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 const ListItem = styled.li`
   cursor: pointer;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Icons = styled.div`
@@ -85,7 +90,7 @@ const Navbar = () => {
 				<Links>
 					<List>
             <Link to={"./"}>
-              <Logo src="./public/img/Logo.png"/>
+              <Logo src="../../img/Logo.png"/>
             </Link>
 						<ListItem>Sabrina.</ListItem>
 					</List>

@@ -12,16 +12,25 @@ const Section = styled.div`
 const Container = styled.div`
   height: 100vh;
   scroll-snap-align: center;
-  width: 1400px;
+  max-width: 1400px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+    max-width: unset;
+    position: relative;
+  }
 `;
 
 const Left = styled.div`
   flex: 1;
 
   @media only screen and (max-width: 768px) {
-    display: none;
+    position: absolute;
+    height: 100%;
+    width: 95%;
   }
 `;
 
@@ -34,6 +43,7 @@ const Title = styled.h1`
 
   @media only screen and (max-width: 768px) {
     font-size: 50px;
+    text-align: center;
   }
 `;
 
@@ -45,8 +55,10 @@ const Right = styled.div`
   gap: 20px;
 
   @media only screen and (max-width: 768px) {
-    align-items: center;
-    text-align: center;
+    margin: 0 1rem;
+    position: absolute;
+    bottom: 0;
+    top: 0;
   }
 `;
 
@@ -73,21 +85,6 @@ const Action = styled.p`
   font-size: 16px;
   font-weight: 500;
 `;
-
-const Button = styled.button`
-  background-color: #9E5C63;
-  color: #fff;
-  font-weight: 500;
-  width: 100%;
-  max-width: 120px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 0;
-`;
-
-const Img = styled.img``
 
 const Work = () => {
 	return (

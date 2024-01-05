@@ -42,6 +42,9 @@ const Left = styled.div`
   @media only screen and (max-width: 768px) {
     flex: 1;
     align-items: center;
+    margin: 0 1rem;
+    justify-content: unset;
+    padding-top: 10rem;
   }
 `;
 
@@ -80,11 +83,6 @@ const Desc = styled.p`
   color: #3d3b3b;
   font-family: 'Avenir', sans-serif;
   font-weight: 300;
-
-  @media only screen and (max-width: 768px) {
-    padding: 20px;
-    text-align: center;
-  }
 `;
 
 const Button = styled.button`
@@ -108,30 +106,6 @@ const Right = styled.div`
     flex: 1;
     width: 100%;
 		display: none;
-  }
-`;
-
-const Img = styled.img`
-  width: 800px;
-  height: 600px;
-  object-fit: contain;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-	margin: auto;
-  animation: animate 2s infinite ease alternate;
-
-  @media only screen and (max-width: 768px) {
-    width: 300px;
-    height: 300px;
-  }
-
-  @keyframes animate {
-    to {
-      transform: translateY(30px);
-    }
   }
 `;
 
@@ -167,7 +141,6 @@ const Hero = () => {
               </Sphere>
             </Suspense>
           </Canvas>
-					{/* <Img src="./public/img/rose-no-bg.png" /> */}
 				</Right>
 			</Container>
 		</Section>
