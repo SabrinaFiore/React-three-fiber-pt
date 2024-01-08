@@ -36,13 +36,13 @@ const Left = styled.div`
 
 const Title = styled.h1`
   font-family: 'EB Garamond', serif;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 300;
   letter-spacing: 1.5px;
   line-height: 1;
 
   @media only screen and (max-width: 768px) {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
   }
 `;

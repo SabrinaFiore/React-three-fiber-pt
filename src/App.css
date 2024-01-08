@@ -56,20 +56,6 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
-.slide-title {
-  margin-left: 2.5rem;
-  line-height: 1;
-  font-family: 'Avenir', sans-serif;
-  font-family: 'EB Garamond', serif;
-  font-size: 30px;
-  font-weight: 300;
-  line-height: 1;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 50px;
-  }
-}
-
 .slide {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #000000, #000000c7); /* Chrome 10-25, Safari 5.1-6 */

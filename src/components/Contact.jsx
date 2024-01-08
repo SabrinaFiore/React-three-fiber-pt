@@ -16,13 +16,23 @@ const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   color: #3d3b3b;
+
+  @media only screen and (max-width: 768px) {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 `;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
+
   @media only screen and (max-width: 768px) {
-    justify-content: center;
+    display: unset;
+    flex: unset;
   }
 `;
 
@@ -39,6 +49,11 @@ const Title = styled.h1`
 
 const Right = styled.div`
   flex: 1;
+
+  @media only screen and (max-width: 768px) {
+    flex: unset;
+    text-align: center;
+  }
 `;
 
 const Subtitle = styled.h2`
@@ -53,7 +68,6 @@ const Email = styled.h4`
   font-size: 14px;
   font-weight: 600;
   padding-top: 1rem;
-
   text-decoration: none; 
 `;
 
@@ -82,7 +96,6 @@ const Contact = () => {
           <Title>Available to talk about new opportunities!</Title>
         </Left>
         <Right>
-          <div>
             <Subtitle>Let's keep in touch!</Subtitle>
             <Email>Email</Email>
               <a className="linkEmail" href="mailto:sabrinafiore1992@gmail.com" target="_blank">sabrinafiore1992@gmail.com</a>
@@ -92,7 +105,6 @@ const Contact = () => {
               <p><a className="linkSocial underline" href="https://github.com/SabrinaFiore" target="_blank">Github</a></p>
               <p><a className="linkSocial underline" href="https://www.instagram.com/sabrinafiore_dev/" target="_blank">Instagram</a></p>
             </Description>
-          </div>
         </Right>
       </Container>
     </Section>

@@ -26,6 +26,7 @@ const Container = styled.div`
     position: fixed;
     background: #f0f0f0;
     z-index: 2;
+    top: 0;
   }
 `;
 

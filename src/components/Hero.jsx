@@ -11,24 +11,22 @@ const Section = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
-  @media only screen and (max-width: 768px) {
-    height: 200vh;
-  }
 `;
 
 const Container = styled.div`
   height: 100%;
   scroll-snap-align: center;
-  width: 1400px;
+  max-width: 1400px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 
   @media only screen and (max-width: 768px) {
-    width: 100%;
-    flex-direction: column;
+    height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
 `;
 
@@ -42,9 +40,8 @@ const Left = styled.div`
   @media only screen and (max-width: 768px) {
     flex: 1;
     align-items: center;
-    margin: 0 1rem;
+    padding: 0 1.5rem;
     justify-content: unset;
-    padding-top: 10rem;
   }
 `;
 

@@ -8,7 +8,8 @@ const Section = styled.div`
   justify-content: center;
 
   @media only screen and (max-width: 768px) {
-    height: 200vh;
+    height: 100%;
+    padding: 5.5rem 2rem 4rem;
   }
 `;
 
@@ -17,10 +18,6 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-  }
 `;
 
 const Title = styled.h3`
@@ -43,12 +40,11 @@ const Desc = styled.p`
   color: #3d3b3b;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   line-height: 2;
 
   @media only screen and (max-width: 768px) {
-    padding: 20px;
-    text-align: center;
+    margin: 0.5rem 0;
   }
 `;
 

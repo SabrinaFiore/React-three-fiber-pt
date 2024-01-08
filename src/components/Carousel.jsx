@@ -5,16 +5,35 @@ import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
 
 const Section = styled.div`
-  height: 100vh;
   scroll-snap-align: center;
 `;
 
 const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+   margin-bottom: 1.5rem;
+  }
 `;
+
+const Title = styled.div`
+  margin-left: 2.5rem;
+  line-height: 1;
+  font-family: 'Avenir', sans-serif;
+  font-family: 'EB Garamond', serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 50px;
+    margin-left: 1rem;
+    font-size: 25px;
+  }
+`
 
 const Button = styled.button`
   background-color: #9E5C63;
@@ -96,7 +115,7 @@ const Carousel = () => {
           {/* <div>
             {curSlide} of {slideCount}
           </div> */}
-          <h2 className="slide-title">Recently projects where I've worked on</h2>
+          <Title>Recently projects where I've worked on</Title>
           <div ref={dragTarget} draggable="true" className="carousel__stage">
             <div className="slide" ref={el => {itemsRef.current[0] = el}}>
               <img src="../../img/kikoMilano.png" alt="" />
