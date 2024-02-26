@@ -12,6 +12,7 @@ const Container = styled.div`
 
   @media only screen and (max-width: 768px) {
     display: block;
+    padding: 5.5rem 2rem 4rem;
   }
 `;
 
@@ -19,6 +20,11 @@ const HeroInner = styled.div`
   display: flex;
   align-content: center;
   color: #3d3b3b;
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+    margin-bottom: 2rem;
+  }
 `;
 
 const Title = styled.h1`
