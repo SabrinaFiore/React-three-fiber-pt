@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "sabrina-fiore-portfolio",
-    "sabrina-fiore-portfolio": "sabrina-fiore-portfolio"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "sabrinafioreportfolio"
+  }
 }

@@ -112,6 +112,7 @@ const Hero = () => {
 		<Section>
 			<Container>
 				<Left>
+          <Desc>- Under construction - </Desc>
 					<Title>Welcome to my space!</Title>
 					<WhatWeDo>
 						<Line src=""/>

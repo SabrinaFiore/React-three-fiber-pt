@@ -60,19 +60,19 @@ const Carousel = () => {
   const itemsRef = useRef([
     {
       title: 'KIKO Milano',
-      description: 'Description of Project 1',
+      description: 'Salesforce Marketing Cloud',
     },
     {
       title: 'RTE Player',
-      description: 'Description of Project 2',
+      description: 'UI Design/Development',
     },
     {
       title: 'AlJazira SMART and SAIB Mobile banking',
-      description: 'Description of Project 3',
+      description: 'UI Design/Development',
     },
     {
       title: 'Runroom',
-      description: 'Description of Project 4',
+      description: 'UI Design/Development',
     }
   ]);
 

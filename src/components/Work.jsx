@@ -98,9 +98,9 @@ const Work = () => {
             <Desc> 
               <List>
                 <li>01. Senior Analyst - Accenture (still working here)</li>
-                <li>02. Frontend Developer - Fincons Group</li>
-                <li>03. Frontend Developer - CREALOGIX Group (Barcelona, Spain)</li>
-                <li>04. Frontend Developer - Runroom (Barcelona, Spain)</li>
+                <li>02. UI Developer - Fincons Group</li>
+                <li>03. UI Design / UI Developer - CREALOGIX Group (Barcelona, Spain)</li>
+                <li>04. UI Developer - Runroom (Barcelona, Spain)</li>
                 <li>05. UI/UX DesignerUI/UX Designer - Ideare Communication (Rome, Italy)</li>
               </List>
             </Desc>

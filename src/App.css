@@ -6,7 +6,6 @@ body {
 }
 
 /* wrapper */
-
 .wrapper {
   max-width: 768px;
   width: 100%;
@@ -26,6 +25,31 @@ body {
 
 .fontFamilyRoboto {
   font-family: 'Roboto', sans-serif;
+}
+
+/* Home */
+.customHomeLink {
+  text-decoration: none;
+  color: #3d3b3b;
+}
+
+/* Case-studies */
+.hero-content-inner {
+  padding: 1.2rem;
+}
+
+.link {
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.link a,
+.link a:visited,
+.link a:active,
+.link a:link {
+  text-decoration: none;
+  color: #3d3b3b;
 }
 
 /* Slide component */

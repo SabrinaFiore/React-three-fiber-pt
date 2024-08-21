@@ -93,7 +93,10 @@ const Navbar = () => {
             <Link to={"./"}>
               <Logo src="../../img/Logo.png"/>
             </Link>
-						<ListItem>Sabrina.</ListItem>
+						<ListItem>
+            <div className='link'><Link to={"./"}>Sabrina</Link>
+            </div>
+            </ListItem>
 					</List>
 				</Links>
 				<Icons>
