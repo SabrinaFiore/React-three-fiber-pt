@@ -101,7 +101,7 @@ const Navbar = () => {
 				</Links>
 				<Icons>
 					{/* <Icon src="./public/img/Logo.jpg"/> */}
-					<Button onClick={() => navigate('noCodeProject')}>No Code Projects</Button>
+					<Button onClick={() => navigate('noCodeProject')}>Photography Exhibitions</Button>
 					<Button onClick={() => navigate('contact')}>Contact</Button>
 				</Icons>
 			</Container>

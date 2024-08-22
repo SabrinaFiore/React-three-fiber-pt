@@ -116,10 +116,10 @@ const Hero = () => {
 					<Title>Welcome to my space!</Title>
 					<WhatWeDo>
 						<Line src=""/>
-						<Subtitle>- I'm Sabrina. UI-UX Designer and Front-End Developer</Subtitle>
+						<Subtitle>- I'm Sabrina!</Subtitle>
 					</WhatWeDo>
-					<Desc>I enjoy creating well-designed, human-centered experiences.
-          <br></br> I developed my web page to put together all my interests. Have a pleasant time around here!
+					<Desc>I developed my web page to put together all my interests.
+          <br></br> Putting together almost all of my skills. Have a pleasant time around here!
           </Desc>
           <Button onClick={() => navigate('about-me')}>About me</Button>
 				</Left>

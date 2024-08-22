@@ -89,9 +89,9 @@ const NoCodeProjects = () => {
 	return (
 		<Section>
       <Container>
-        <Title>Photography Contest</Title>
+        <Title>Photography Exhibitions</Title>
           <Gallery>
-            <Subtitle>ND Awards</Subtitle> 
+            <Subtitle>ND Awards - Honorable mention on the ND Awards magazine 2020</Subtitle> 
             <Desc>Is a photography magazine, founded in 2008.
               <br></br>
               Check out my work on&nbsp;
@@ -105,16 +105,31 @@ const NoCodeProjects = () => {
               <Img src="../../img/IMG07.jpg" alt="hamburg07"/>
             </GridND>
             
-            <Subtitle>The Holy Art</Subtitle> 
+            <Subtitle>The Holy Art - Berlin exhibitions on December 2023</Subtitle> 
             <Desc>The Holy Art Gallery is a global leader in the art world, featuring the works of the most talented emerging and established artists from around the globe with branches in London, New York, Athens and Berlin!
               <br></br>
-              My exposition on 21-22-23 December 2023 in Berlin was about some of these photos, check out&nbsp;
+              The exhibitions on 21-22-23 December 2023 in Berlin was about some of these photos, check out&nbsp;
               <a className="linkNoCodeProjects underline" href="https://www.theholyart.com/journal/newyork" target="_blank" rel="noopener noreferrer">the holy art page</a>
             </Desc>
             <GalleryBRL>
+              <Img src="../../img/theholyart-ph-03.png" alt="nk01"/>
               <Img src="../../img/IMG08.jpg" alt="nk01"/>
               <Img src="../../img/IMG09.jpg" alt="nk02"/>
               <Img src="../../img/IMG10.jpg" alt="nk03"/>
+            </GalleryBRL>
+
+            <Subtitle>Lanificio Digitale - Naples exhibitions on May 2024</Subtitle> 
+            <Desc>International event based on the new languages of contemporary art
+              <br></br>
+              The exhibitions on May 2024 in Naples was really important also for the city, check the article&nbsp;
+              <a className="linkNoCodeProjects underline" href="https://napoli.repubblica.it/cronaca/2024/05/13/news/new_fluxus_al_lanificio_di_napoli_i_nuovi_linguaggi_dellarte_contemporanea-422939261/" target="_blank" rel="noopener noreferrer">"Napoli i nuovi linguaggi dell’arte"</a>
+              <br></br>
+              In addiction, my photo was also converted in a&nbsp;              
+              <a className="linkNoCodeProjects underline" href="https://zora.co/collect/base:0xa7572c0cfff083ebc379ba2ae834a188a220d9f9/1" target="_blank" rel="noopener noreferrer">NFT</a>
+            </Desc>
+            <GalleryBRL>
+              <Img src="../../img/IMG_9718 2.2_mini.jpg" alt="np01"/>
+              <Img src="../../img/IMG11.jpeg" alt="np02"/>
             </GalleryBRL>
           </Gallery>
       </Container>
