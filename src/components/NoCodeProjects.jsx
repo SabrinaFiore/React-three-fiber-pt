@@ -105,7 +105,7 @@ const NoCodeProjects = () => {
               <Img src="../../img/IMG07.jpg" alt="hamburg07"/>
             </GridND>
             
-            <Subtitle>The Holy Art - Berlin exhibitions on December 2023</Subtitle> 
+            <Subtitle>The Holy Art - Berlin exhibitions in December 2023</Subtitle> 
             <Desc>The Holy Art Gallery is a global leader in the art world, featuring the works of the most talented emerging and established artists from around the globe with branches in London, New York, Athens and Berlin!
               <br></br>
               The exhibitions on 21-22-23 December 2023 in Berlin was about some of these photos, check out&nbsp;
@@ -118,7 +118,7 @@ const NoCodeProjects = () => {
               <Img src="../../img/IMG10.jpg" alt="nk03"/>
             </GalleryBRL>
 
-            <Subtitle>Lanificio Digitale - Naples exhibitions on May 2024</Subtitle> 
+            <Subtitle>Lanificio Digitale - Naples exhibitions in May 2024</Subtitle> 
             <Desc>International event based on the new languages of contemporary art
               <br></br>
               The exhibitions in May 2024 in Naples were really important also for the city, check the article &nbsp;
