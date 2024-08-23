@@ -1,5 +1,7 @@
 import { React } from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+
 
 const Section = styled.div`
   height: calc(100vh - 80px);
@@ -55,27 +57,36 @@ const Paragraph = styled.p`
   padding-top: 1rem;
 `;
 
+const Button = styled.button`
+  background-color: transparent;
+  color: #3d3b3b;
+  border: none;
+  cursor: pointer;
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+`;
+
 const AboutMe = () => {
+  const navigate = useNavigate();
 	return (
 		<Section>
       <Container>
         <Title>About me</Title>
         <Desc className="wrapper">
           <Paragraph>
-            I work as a Front End Developer, actually I designed this portfolio to combine my knowledge about UI-Design and Front-End. 
+            I work as a UI Design and UI Developer, actually I designed this portfolio to combine my knowledge and my interests. 
             I am originally from Southern Italy and I traveled quite a bit to complete my education and knowledge. </Paragraph>
           <Paragraph>
-            I attended the Academy of Fine Arts in Rome in 2011, where I started to elaborate my interest in graphic arts on a deep level. 
-            Then, in 2017 I moved to Barcelona to attend a Master's degree. During the course I developed my knowledge in coding, and I have approached the Hi-tech's world working as a Front-End Developer, for the first time. Meantime I never stopped working on my photography and graphic art interests.
+            I attended the Academy of Fine Arts in Rome in 2011, where I started to elaborate my interest in graphic arts and photography on a deep level. 
           </Paragraph> 
           <Paragraph>
-            When I was starting my career in software development, I dedicated a lot of time to expanding my technical knowledge by reading books, taking online courses, and it was (and it is) a continuous learning day by day. 
-            My first position was as a Junior developer in a company, in Barcelona. <br></br>
-            At time, I had so many things to learn, and being honest that was so tough and interesting at the same moment. I started working in an Agile Team with UI and UX designers, Back End Developers, Front End Developers, Product Owners and Managers, for a small projects. 
-            Then, little by little, I learn how to work with complex architectures using framework like Angular and implementing (and also creating) a UI components library.
+            Then, in 2017 I moved to Barcelona to attend a Master's degree. During the course, I developed my knowledge in coding, and I have approached the Hi-tech's world working as a UI Developer. Meantime I never stopped increasing my interest about photography, 
+            actually in the last years I have participated to different exhibitions <Button onClick={() => navigate('../noCodeProject')}>(check in Photography Exhibitions page)</Button>. <br></br>
           </Paragraph>
           <Paragraph>
-          My experience and knowledge about designing a web/app application allow me moving to the management part to apply my skills to build and manage an entire creative project.
+            I have always been in to my career to improve my self and my skills and after several years on the Hi-Tech industry, I would like to use the skills I developed to back work in a creativity environments. In addiction, working in a consultancy big company I also learn how to manage project, comunicate with client, improve my organisational and planning skills.
           </Paragraph>
         </Desc>
       </Container>
