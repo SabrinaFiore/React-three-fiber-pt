@@ -121,7 +121,7 @@ const NoCodeProjects = () => {
             <Subtitle>Lanificio Digitale - Naples exhibitions on May 2024</Subtitle> 
             <Desc>International event based on the new languages of contemporary art
               <br></br>
-              The exhibitions on May 2024 in Naples was really important also for the city, check the article&nbsp;
+              The exhibitions in May 2024 in Naples were really important also for the city, check the article &nbsp;
               <a className="linkNoCodeProjects underline" href="https://napoli.repubblica.it/cronaca/2024/05/13/news/new_fluxus_al_lanificio_di_napoli_i_nuovi_linguaggi_dellarte_contemporanea-422939261/" target="_blank" rel="noopener noreferrer">"Napoli i nuovi linguaggi dell’arte"</a>
               <br></br>
               In addiction, my photo was also converted in a&nbsp;              
