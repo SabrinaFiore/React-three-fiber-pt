@@ -47,6 +47,14 @@ const Button = styled.button`
   margin: 1rem 0;
 `;
 
+const Desc = styled.p`
+  margin-top: 0.5rem;
+  margin-left: 2.5rem;
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+`;
+
 gsap.registerPlugin(Draggable);
 
 const Carousel = () => {
@@ -116,6 +124,7 @@ const Carousel = () => {
             {curSlide} of {slideCount}
           </div> */}
           <Title>Recently projects where I've worked on</Title>
+          <Desc>See more projects by side scrolling</Desc>
           <div ref={dragTarget} draggable="true" className="carousel__stage">
             <div className="slide" ref={el => {itemsRef.current[0] = el}}>
               <img src="../../img/kikoMilano.png" alt="" />
