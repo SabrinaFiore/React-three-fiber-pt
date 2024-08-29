@@ -5,6 +5,8 @@ import imgProject03 from '../../public/img/type-scale-03.png';
 import imgProject04 from '../../public/img/type-scale-04.png';
 import imgProject05 from '../../public/img/pt-sabrina-fiore01.jpg';
 import imgProject06 from '../../public/img/pt-sabrina-fiore02.jpg';
+import imgProject07 from '../../public/img/pt-sabrina-fiore05.png';
+import imgProject08 from '../../public/img/pt-sabrina-fiore06.jpg';
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
@@ -69,19 +71,17 @@ const Case05 = () => {
   return (
     <div className="hero" ref={app}>
       <Container>
+        <ParagraphTitle>Portfolio</ParagraphTitle>
+        <Desc>Description of the evolution of Design and Development of My Portfolio — a UX/UI/Development case study </Desc>
         <div class="cards-pt">
           <div class="card-pt"><img className='card-img' src={imgProject01} alt="projectImg"/></div>
           <div class="card-pt"><img className='card-img' src={imgProject02} alt="projectImg"/></div>
           <div class="card-pt"><img className='card-img' src={imgProject03} alt="projectImg"/></div>
           <div class="card-pt"><img className='card-img' src={imgProject04} alt="projectImg"/></div>
+          <div class="card-pt"><img className='card-img' src={imgProject07} alt="projectImg"/></div>
+          <div class="card-pt"><img className='card-img' src={imgProject08} alt="projectImg"/></div>
           <div class="card-pt"><img className='card-img' src={imgProject05} alt="projectImg"/></div>
           <div class="card-pt"><img className='card-img' src={imgProject06} alt="projectImg"/></div>
-          <div class="card-pt">SEVEN</div>
-          <div class="card-pt">EIGHT</div>
-          <div class="card-pt">NINE</div>
-          <div class="card-pt">TEN</div>
-          <div class="card-pt">ELEVEN</div>
-          <div class="card-pt">TWELVE</div>
         </div>
       </Container>
       <FooterCS>
