@@ -103,7 +103,7 @@ const Contact = () => {
             <Description>
               <p><a className="linkSocial underline" href="https://www.linkedin.com/in/sabrina-fiore-8437a657/" target="_blank">Linkedin</a></p>
               <p><a className="linkSocial underline" href="https://github.com/SabrinaFiore" target="_blank">Github</a></p>
-              <p><a className="linkSocial underline" href="https://www.instagram.com/sabrinafiore_dev/" target="_blank">Instagram</a></p>
+              {/* <p><a className="linkSocial underline" href="https://www.instagram.com/sabrinafiore_dev/" target="_blank">Instagram</a></p> */}
             </Description>
         </Right>
       </Container>
