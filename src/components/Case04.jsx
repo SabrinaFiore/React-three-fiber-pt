@@ -5,6 +5,10 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Container = styled.div`
   height: 100%;
+
+  @media only screen and (max-width: 768px) { 
+    height: 100vh;
+  }
 `;
 
 const Title = styled.h2`

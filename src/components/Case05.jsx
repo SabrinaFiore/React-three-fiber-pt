@@ -71,17 +71,19 @@ const Case05 = () => {
   return (
     <div className="hero" ref={app}>
       <Container>
-        <ParagraphTitle>Portfolio</ParagraphTitle>
-        <Desc>Description of the evolution of Design and Development of My Portfolio — a UX/UI/Development case study </Desc>
-        <div class="cards-pt">
-          <div class="card-pt"><img className='card-img' src={imgProject01} alt="projectImg"/></div>
-          <div class="card-pt"><img className='card-img' src={imgProject02} alt="projectImg"/></div>
-          <div class="card-pt"><img className='card-img' src={imgProject03} alt="projectImg"/></div>
-          <div class="card-pt"><img className='card-img' src={imgProject04} alt="projectImg"/></div>
-          <div class="card-pt"><img className='card-img' src={imgProject07} alt="projectImg"/></div>
-          <div class="card-pt"><img className='card-img' src={imgProject08} alt="projectImg"/></div>
-          <div class="card-pt"><img className='card-img' src={imgProject05} alt="projectImg"/></div>
-          <div class="card-pt"><img className='card-img' src={imgProject06} alt="projectImg"/></div>
+        <div className='card'>
+          <ParagraphTitle>Portfolio</ParagraphTitle>
+          <Desc>Description of the evolution of Design and Development of My Portfolio — a UX/UI/Development case study </Desc>
+        </div>
+        <div className="cards-pt">
+          <div className="card-pt"><img className='card-img' src={imgProject01} alt="projectImg"/></div>
+          <div className="card-pt"><img className='card-img' src={imgProject02} alt="projectImg"/></div>
+          <div className="card-pt"><img className='card-img' src={imgProject03} alt="projectImg"/></div>
+          <div className="card-pt"><img className='card-img' src={imgProject04} alt="projectImg"/></div>
+          <div className="card-pt"><img className='card-img' src={imgProject07} alt="projectImg"/></div>
+          <div className="card-pt"><img className='card-img' src={imgProject08} alt="projectImg"/></div>
+          <div className="card-pt"><img className='card-img' src={imgProject05} alt="projectImg"/></div>
+          <div className="card-pt"><img className='card-img' src={imgProject06} alt="projectImg"/></div>
         </div>
       </Container>
       <FooterCS>

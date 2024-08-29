@@ -44,6 +44,14 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) { 
+  .hero {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+
 .hero-image {
   /* position: absolute; */
   overflow: hidden;
@@ -100,6 +108,31 @@ body {
   padding: 1.5rem;
 }
 
+@media only screen and (max-width: 768px) { 
+  .cards-pt { 
+    padding: unset;
+  }
+}
+
+@media only screen and (max-width: 768px) { 
+  .cards, 
+  .cards-prj, 
+  .cards-pt { 
+    display: block !important;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) { 
+  .card-long,
+  .card-img,
+  .cards-pt {
+    width: 100%;
+    max-width: none;
+    height: unset;
+    object-fit: contain;
+  }
+}
 
 .link {
   font-family: 'Avenir', sans-serif;
