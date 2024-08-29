@@ -81,6 +81,10 @@ const Carousel = () => {
     {
       title: 'Runroom',
       description: 'UI Design/Development',
+    },
+    {
+      title: 'Portfolio',
+      description: 'UI Design/Development',
     }
   ]);
 
@@ -156,6 +160,14 @@ const Carousel = () => {
                 <h2>{itemsRef.current[3].title}</h2>
                 <p>{itemsRef.current[3].description}</p>
                 <Button onClick={() => navigate('case04')}>Read more about the case</Button>
+              </div>
+            </div>
+            <div className="slide" ref={el => {itemsRef.current[4] = el}}>
+              <img src="../../img/portfolio-sabrina.png" alt="" />
+              <div className="slide-description">
+                <h2>{itemsRef.current[4].title}</h2>
+                <p>{itemsRef.current[4].description}</p>
+                <Button onClick={() => navigate('case05')}>Read more about the case</Button>
               </div>
             </div>
           </div>

@@ -1,40 +1,18 @@
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import imgProject from '../../public/img/Img1.jpg';
+import React, { useRef } from 'react';
+import imgProject01 from '../../public/img/rte.png';
+import imgProject02 from '../../public/img/rte-02.png';
 import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
 
 const Container = styled.div`
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media only screen and (max-width: 768px) {
-    display: block;
-    padding: 5.5rem 2rem 4rem;
-    height: 100%;
-    text-align: center;
-  }
-`;
-
-const HeroInner = styled.div`
-  display: flex;
-  align-content: center;
-  color: #3d3b3b;
-  text-align: left;
-
-  @media only screen and (max-width: 768px) {
-    display: block;
-    margin-bottom: 2rem;
-  }
+  height: 100%;
 `;
 
 const Title = styled.h2`
   font-family: 'Avenir', sans-serif;
   font-size: 24px;
   font-weight: 500;
+  padding-bottom: 1rem;
 `;
 
 const Desc = styled.p`
@@ -48,23 +26,6 @@ const ParagraphTitle = styled.h2`
   font-size: 18px;
   font-weight: 600;
   padding-top: 0.8rem;
-`;
-
-const List = styled.ul`
-  list-style-type: none;
-  color: #3d3b3b;
-  font-family: 'Avenir', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5rem;
-  padding-top: 2rem;
-`;
-
-const ListItem = styled.li`
-  font-family: 'Avenir', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5rem;
 `;
 
 const FooterCS = styled.div`
@@ -99,39 +60,35 @@ const Button = styled.button`
 
 const Case02 = () => {
   const app = useRef(null);
-  const content = useRef(null);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const tl = gsap.timeline();
-  }, []);
 
   return (
     <div className="hero" ref={app}>
       <Container>
-        <HeroInner>
-          <div className="hero-content">
-            <div className="hero-content-inner" ref={content}>
-              <Title>Client: RTÉ Player</Title>
+        <div className="cards-prj">
+          <div className="card">
+            <Title>Client: RTÉ Player</Title>
               <Desc>RTÉ Player is a free online video service from Ireland's public service broadcaster, RTÉ. </Desc>
               <ParagraphTitle>Technologies</ParagraphTitle>
               <Desc>Angular / Figma</Desc>
               <ParagraphTitle>Description</ParagraphTitle>
               <Desc>Work as a UI-Developer to develop different pages and components </Desc>
-              <ParagraphTitle>Purpose</ParagraphTitle>
+          </div>
+          <div className="card">
+          <ParagraphTitle>Purpose</ParagraphTitle>
               <Desc>Rebuilding the product from the ground to add some great new features and functionality and also improving the UI of the product where I was mainly involved.</Desc>
               <br></br>
-              <Desc>Visit:</Desc>
+              <ParagraphTitle>Visit web page:</ParagraphTitle>
               <div className='link'>
                 <Link to={'https://www.rte.ie/player/'}>RTE Player</Link>
               </div>
-            </div>
           </div>
-        </HeroInner>
-        <div className="hero-images">
-          <div className="hero-image projectImg">
-            <img src={imgProject} alt="projectImg"  />
-          </div>
+        </div>
+        <div className="cards-prj">
+          <div className="card-long"><img className='card-img' src={imgProject01} alt="projectImg"  /></div>
+        </div>
+        <div className="cards-prj">
+          <div className="card-long"><img className='card-img' src={imgProject02} alt="projectImg"  /></div>
         </div>
       </Container>
       <FooterCS>

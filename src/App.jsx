@@ -10,6 +10,7 @@ import NoCodeProjects from './components/NoCodeProjects';
 import Case02 from './components/Case02';
 import Case03 from './components/Case03';
 import Case04 from './components/Case04';
+import Case05 from './components/Case05';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path='case02' element={<Case02 />}></Route>
             <Route path='case03' element={<Case03 />}></Route>
             <Route path='case04' element={<Case04 />}></Route>
+            <Route path='case05' element={<Case05 />}></Route>
             <Route path='carousel' element={<Carousel />}></Route>
             <Route path='noCodeProject' element={<NoCodeProjects />}></Route>
           </Routes>

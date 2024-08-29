@@ -38,6 +38,69 @@ body {
   padding: 1.2rem;
 }
 
+.hero {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-image {
+  /* position: absolute; */
+  overflow: hidden;
+  display: block;
+}
+
+.card {
+  padding: 1rem;
+  height: 100%;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.cards-prj {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 1rem 0;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-long {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  height: 600px;
+}
+
+/* Cards-img Portfolio */
+.card-pt {
+  padding: 1rem;
+  height: auto;
+}
+
+.cards-pt {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 1.5rem;
+}
+
+
 .link {
   font-family: 'Avenir', sans-serif;
   font-size: 16px;
@@ -120,17 +183,6 @@ body {
   bottom: 50%;
   z-index: 2;
   margin: 2rem;
-}
-
-.hero {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.hero-image {
-  /* position: absolute; */
-  overflow: hidden;
 }
 
 .linkEmail, 
