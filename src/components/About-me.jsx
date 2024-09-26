@@ -76,18 +76,24 @@ const AboutMe = () => {
         <Title>About me</Title>
         <Desc className="wrapper">
           <Paragraph>
-            I work as a UI Design and UI Developer, actually I designed this portfolio to combine my knowledge and my interests. 
-            I am originally from Southern Italy and I traveled quite a bit to complete my education and knowledge. </Paragraph>
-          <Paragraph>
-            I attended the Academy of Fine Arts in Rome in 2011, where I started to elaborate my interest in graphic arts and photography on a deep level. 
-          </Paragraph> 
-          <Paragraph>
-            Then, in 2017 I moved to Barcelona to attend a Master's degree. During the course, I developed my knowledge in coding, and I have approached the Hi-tech's world working as a UI Developer. Meantime I never stopped increasing my interest about photography, 
-            actually in the last years I have participated to different exhibitions <Button onClick={() => navigate('../noCodeProject')}>(check in Photography Exhibitions page)</Button>. <br></br>
+          I work as a <b>UI/UX Designer and UI Developer</b>, and I designed this portfolio to showcase both my knowledge and my passions.
+          <br></br>
+          <br></br>
+          Originally from Southern Italy, I've traveled to further my education and broaden my expertise. 
+          In 2011, I attended the <b>Academy of Fine Arts in Rome</b>, where I began to deeply explore my interest in graphic arts and photography. 
+          <br></br>
+          <br></br>
+          In 2017, I moved to Barcelona to pursue a <b>Master's degree</b>. During the program, I expanded my coding skills and immersed myself in the tech world, working as a UI Developer. 
+          At the same time, I continued to nurture my passion for photography, participating in several <b>exhibitions</b> over the last few years <Button onClick={() => navigate('../noCodeProject')}>(see the links page for more details)</Button> .
+          <br></br>
+          <br></br>
+          I've always been able to create strong connections between developers and designers, though my focus has always leaned toward <b>design, strategic creation, user experience, and creating interfaces.</b> 
+          My past work experiences have honed my management and planning skills.
+          <br></br>
+          <br></br>
+          Developing ideas has always been, for me, a way to express creativity, solve problems, and push both myself and the projects I work on to new heights. It's a journey where passion meets purpose.
           </Paragraph>
-          <Paragraph>
-            I have always been in to my career to improve my self and my skills and after several years on the Hi-Tech industry, I would like to use the skills I developed to back work in a creativity environments. In addiction, working in a consultancy big company I also learn how to manage project, comunicate with client, improve my organisational and planning skills.
-          </Paragraph>
+        
         </Desc>
       </Container>
     </Section>

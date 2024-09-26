@@ -36,7 +36,7 @@ const Title = styled.div`
 `
 
 const Button = styled.button`
-  background-color: #9E5C63;
+  background-color: #ff6e8d;
   color: #fff;
   font-weight: 500;
   
@@ -131,15 +131,15 @@ const Carousel = () => {
           {/* <div>
             {curSlide} of {slideCount}
           </div> */}
-          <Title>Recently projects where I've worked on</Title>
-          <Desc>See more projects by side scrolling</Desc>
+          <Title>My recent projects</Title>
+          <Desc>Scroll sideways to view more</Desc>
           <div ref={dragTarget} draggable="true" className="carousel__stage">
             <div className="slide" ref={el => {itemsRef.current[0] = el}}>
               <img src="../../img/kikoMilano.png" alt="" />
               <div className="slide-description">
                 <h2>{itemsRef.current[0].title}</h2>
                 <p>{itemsRef.current[0].description}</p>
-                <Button onClick={() => navigate('case01')}>Read more about the case</Button>
+                <Button onClick={() => navigate('case01')}>Read more</Button>
               </div>
             </div>
             <div className="slide" ref={el => {itemsRef.current[1] = el}}>
@@ -147,7 +147,7 @@ const Carousel = () => {
               <div className="slide-description">
                 <h2>{itemsRef.current[1].title}</h2>
                 <p>{itemsRef.current[1].description}</p>
-                <Button onClick={() => navigate('case02')}>Read more about the case</Button>
+                <Button onClick={() => navigate('case02')}>Read more</Button>
               </div>
             </div>
             <div className="slide" ref={el => {itemsRef.current[2] = el}}>
@@ -155,7 +155,7 @@ const Carousel = () => {
               <div className="slide-description">
                 <h2>{itemsRef.current[2].title}</h2>
                 <p>{itemsRef.current[2].description}</p>
-                <Button onClick={() => navigate('case03')}>Read more about the case</Button>
+                <Button onClick={() => navigate('case03')}>Read more</Button>
               </div>
             </div>
             <div className="slide" ref={el => {itemsRef.current[3] = el}}>
@@ -163,7 +163,7 @@ const Carousel = () => {
               <div className="slide-description">
                 <h2>{itemsRef.current[3].title}</h2>
                 <p>{itemsRef.current[3].description}</p>
-                <Button onClick={() => navigate('case04')}>Read more about the case</Button>
+                <Button onClick={() => navigate('case04')}>Read more</Button>
               </div>
             </div>
             <div className="slide" ref={el => {itemsRef.current[4] = el}}>
@@ -171,7 +171,7 @@ const Carousel = () => {
               <div className="slide-description">
                 <h2>{itemsRef.current[4].title}</h2>
                 <p>{itemsRef.current[4].description}</p>
-                <Button onClick={() => navigate('case05')}>Read more about the case</Button>
+                <Button onClick={() => navigate('case05')}>Read more</Button>
               </div>
             </div>
           </div>
