@@ -58,7 +58,11 @@ const ListItem = styled.li`
 `;
 
 const Icons = styled.div`
-  width: 100%;
+  width: 50%;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Icon = styled.img`
