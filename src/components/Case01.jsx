@@ -39,7 +39,6 @@ const FooterCS = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
     padding: 10px;
-    padding: 10px;
     display: flex;
     position: fixed;
     background: #f0f0f0;
@@ -94,7 +93,7 @@ const Case01 = () => {
       </Container>
       <FooterCS>
         <div className='link'></div>
-        <div className='link'>
+        <div className='link link-right'>
           <Button onClick={() => navigate('../case02')}>Go to next project</Button>
         </div>
       </FooterCS>

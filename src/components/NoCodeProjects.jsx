@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Section = styled.div`
   height: 100%;
   scroll-snap-align: center;
-  padding: 5.5rem 0 4rem;
+  padding: 9.5rem 0 4rem;
 `;
 
 const Container = styled.div`

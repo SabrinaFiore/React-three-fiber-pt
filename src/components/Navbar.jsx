@@ -58,10 +58,6 @@ const ListItem = styled.li`
 `;
 
 const Icons = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 20px;
   width: 100%;
 `;
 
@@ -102,6 +98,7 @@ const Navbar = () => {
 				<Icons>
 					{/* <Icon src="./public/img/Logo.jpg"/> */}
 					<Button onClick={() => navigate('noCodeProject')}>Photography Exhibitions</Button>
+          <Button onClick={() => navigate('about-me')}>About me</Button>
 					<Button onClick={() => navigate('contact')}>Contact</Button>
 				</Icons>
 			</Container>

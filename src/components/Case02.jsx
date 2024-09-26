@@ -95,7 +95,7 @@ const Case02 = () => {
         <div className='link'>
           <Button onClick={() => navigate('../case01')}>Go to previous project</Button>
         </div>
-        <div className='link'>
+        <div className='link link-right'>
           <Button onClick={() => navigate('../case03')}>Go to next project</Button>
         </div>
       </FooterCS>

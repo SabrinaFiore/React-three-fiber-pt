@@ -11,7 +11,7 @@ const Section = styled.div`
 
   @media only screen and (max-width: 768px) {
     height: 100%;
-    padding: 5.5rem 2rem 4rem;
+    padding: 9.5rem 2rem 4rem;
   }
 `;
 
