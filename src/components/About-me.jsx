@@ -17,6 +17,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media only screen and (max-width: 768px) {
+    margin: 0 1rem;
+  }
 `;
 
 const Title = styled.h3`
