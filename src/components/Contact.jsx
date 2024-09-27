@@ -40,6 +40,7 @@ const Title = styled.h1`
   font-family: 'EB Garamond', serif;
   font-size: 20px;
   font-weight: 300;
+  margin-left: 2rem;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
