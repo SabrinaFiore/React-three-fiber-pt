@@ -32,7 +32,8 @@ const ParagraphTitle = styled.h2`
 `;
 
 const FooterCS = styled.div`
-  width: 1400px;
+  max-width: 1400px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,7 +94,7 @@ const Case04 = () => {
           <Button onClick={() => navigate('../case03')}>Go to previous project</Button>
         </div>
         <div className='link link-right'>
-          <Button onClick={() => navigate('../case05')}>Go to previous project</Button>
+          <Button onClick={() => navigate('../case05')}>Go to next project</Button>
         </div>
       </FooterCS>
     </div>

@@ -12,8 +12,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  max-width: 1400px;
-  width: 100%;
+  width: 1400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +60,7 @@ const Icons = styled.div`
   width: 60%;
 
   @media only screen and (max-width: 768px) {
-    width: auto;
+    width: 60%;
   }
 `;
 
