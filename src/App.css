@@ -93,9 +93,14 @@ body {
   margin: 1rem;
 }
 
+@media only screen and (max-width: 768px) { 
+  .cards-pt { 
+    display: block;
+  }
+}
+
 /* Projects page */
 .card-allPrj2 {
-  color: white;
   height: 14rem;
 }
 
@@ -107,6 +112,14 @@ body {
   -moz-box-shadow: 6px 6px 5px 0px rgba(179,179,179,1);
   box-shadow: 6px 6px 5px 0px rgba(179,179,179,1);
 }
+
+@media only screen and (max-width: 768px) { 
+  .cards-prj2 img { 
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 .card-img {
   width: 100%;

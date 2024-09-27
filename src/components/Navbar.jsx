@@ -59,8 +59,8 @@ const ListItem = styled.li`
 const Icons = styled.div`
   width: 60%;
 
-  @media only screen and (max-width: 1200px) {
-    width: 100%;
+  @media only screen and (max-width: 768px) {
+    width: auto;
   }
 `;
 
@@ -74,14 +74,14 @@ const Button = styled.button`
   color: #3d3b3b;
   font-weight: 500;
   width: 100%;
-  max-width: 200px;
+  max-width: 170px;
   padding: 10px 0;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 
-  @media only screen and (max-width: 1024px) {
-    max-width: 150px;
+  @media only screen and (max-width: 1224px) {
+  width: 100%;
+    max-width: 160px;
   }
 `;
 
