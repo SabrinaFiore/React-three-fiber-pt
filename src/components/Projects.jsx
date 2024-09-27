@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 const Section = styled.div`
-   height: 100%;
+  height: 100%;
   scroll-snap-align: center;
   padding: 5.5rem 0 4rem;
 
