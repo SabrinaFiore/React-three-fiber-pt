@@ -5,12 +5,13 @@ import Home from './components/Home';
 import AboutMe from './components/About-me';
 import Navbar from './components/Navbar';
 import Case01 from './components/Case01';
-import Carousel from './components/Carousel';
-import NoCodeProjects from './components/NoCodeProjects';
 import Case02 from './components/Case02';
 import Case03 from './components/Case03';
 import Case04 from './components/Case04';
 import Case05 from './components/Case05';
+import Carousel from './components/Carousel';
+import NoCodeProjects from './components/NoCodeProjects';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path='case04' element={<Case04 />}></Route>
             <Route path='case05' element={<Case05 />}></Route>
             <Route path='carousel' element={<Carousel />}></Route>
+            <Route path='projects' element={<Projects />}></Route>
             <Route path='noCodeProject' element={<NoCodeProjects />}></Route>
           </Routes>
         </div>

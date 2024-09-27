@@ -58,7 +58,7 @@ const ListItem = styled.li`
 `;
 
 const Icons = styled.div`
-  width: 50%;
+  width: 60%;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -80,7 +80,6 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 1rem;
 `;
 
 const Navbar = () => {
@@ -101,8 +100,9 @@ const Navbar = () => {
 				</Links>
 				<Icons>
 					{/* <Icon src="./public/img/Logo.jpg"/> */}
-					<Button onClick={() => navigate('noCodeProject')}>Photography Exhibitions</Button>
           <Button onClick={() => navigate('about-me')}>About me</Button>
+          <Button onClick={() => navigate('projects')}>Projects</Button>
+					<Button onClick={() => navigate('noCodeProject')}>Photography Exhibitions</Button>
 					<Button onClick={() => navigate('contact')}>Contact</Button>
 				</Icons>
 			</Container>

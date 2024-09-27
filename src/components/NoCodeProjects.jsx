@@ -7,7 +7,7 @@ const Section = styled.div`
   padding: 5.5rem 0 4rem;
 
   @media only screen and (max-width: 768px) {
-    padding: 9.5rem 0 4rem;
+    padding: 11.5rem 0 4rem;
   }
 `;
 

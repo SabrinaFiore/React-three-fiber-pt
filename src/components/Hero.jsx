@@ -118,8 +118,8 @@ const Hero = () => {
 						<Line src=""/>
 						<Subtitle>- I'm Sabrina!</Subtitle>
 					</WhatWeDo>
-					<Desc>I developed my web page to put together my skills.
-          <br></br> Have a pleasant time around here!
+					<Desc>I developed my webpage to showcase my skills. Have a pleasant time exploring!
+          <br></br> <i><b>&ldquo;Creating projects and developing concepts are necessities.&rdquo;</b></i>  
           </Desc>
           <Button onClick={() => navigate('about-me')}>About me</Button>
 				</Left>

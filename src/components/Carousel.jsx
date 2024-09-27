@@ -132,7 +132,7 @@ const Carousel = () => {
             {curSlide} of {slideCount}
           </div> */}
           <Title>My recent projects</Title>
-          <Desc>Scroll sideways to view more</Desc>
+          <Desc>Scroll sideways to view more &#x2192;	</Desc>
           <div ref={dragTarget} draggable="true" className="carousel__stage">
             <div className="slide" ref={el => {itemsRef.current[0] = el}}>
               <img src="../../img/kikoMilano.png" alt="" />

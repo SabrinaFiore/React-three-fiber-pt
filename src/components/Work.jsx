@@ -104,7 +104,7 @@ const Work = () => {
                 <li>05. UI/UX DesignerUI/UX Designer - Ideare Communication (Rome, Italy)</li>
               </List>
             </Desc>
-					<Action>Scroll down to see more</Action>
+					<Action>Scroll down to have a look at my recent project &#128515;</Action>
 				</Right>
 			</Container>
 		</Section>
