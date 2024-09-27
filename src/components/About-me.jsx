@@ -2,16 +2,13 @@ import { React } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-
 const Section = styled.div`
-  height: calc(100vh - 80px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
+  scroll-snap-align: center;
+  padding: 5.5rem 0 4rem;
 
   @media only screen and (max-width: 768px) {
-    height: 100%;
-    padding: 11.5rem 2rem 4rem;
+    padding: 11.5rem 0 4rem;
   }
 `;
 

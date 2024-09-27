@@ -44,6 +44,10 @@ body {
   margin: 0 auto;
 }
 
+.heroHome {
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 768px) { 
   .hero {
     padding-top: 9rem;
@@ -213,7 +217,7 @@ body {
   background: linear-gradient(to right, #000000, #000000c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   display: inline-block;
-  height: calc(100vh - 300px);
+  height: calc(100vh - 270px);
   margin: 2rem 0;
   padding: 0;
   overflow: hidden;

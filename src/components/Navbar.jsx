@@ -17,10 +17,9 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-
+    
   @media only screen and (max-width: 768px) {
     width: 100%;
-    padding: 10px;
     padding: 10px;
     display: flex;
     position: fixed;
@@ -60,7 +59,7 @@ const ListItem = styled.li`
 const Icons = styled.div`
   width: 60%;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1200px) {
     width: 100%;
   }
 `;
@@ -76,10 +75,14 @@ const Button = styled.button`
   font-weight: 500;
   width: 100%;
   max-width: 200px;
-  padding: 10px;
+  padding: 10px 0;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
+  @media only screen and (max-width: 1024px) {
+    max-width: 150px;
+  }
 `;
 
 const Navbar = () => {

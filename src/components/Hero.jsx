@@ -20,6 +20,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-left: 4rem;
 
   @media only screen and (max-width: 768px) {
     height: 100vh;
@@ -110,37 +111,38 @@ const Hero = () => {
   const navigate = useNavigate()
 	return (
 		<Section>
-			<Container>
-				<Left>
-          <Desc>- Under construction - </Desc>
-					<Title>Welcome to my space!</Title>
-					<WhatWeDo>
-						<Line src=""/>
-						<Subtitle>- I'm Sabrina!</Subtitle>
-					</WhatWeDo>
-					<Desc>I developed my webpage to showcase my skills. Have a pleasant time exploring!
-          <br></br> <i><b>&ldquo;Creating projects and developing concepts are necessities.&rdquo;</b></i>  
-          </Desc>
-          <Button onClick={() => navigate('about-me')}>About me</Button>
-				</Left>
-				<Right>
-					<Canvas>
-            <Suspense fallback={null}>
-              <OrbitControls enableZoom={true} />
-              <ambientLight intensity={1.5} />
-              <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 50, 50]} scale={1.8}>
-                <MeshDistortMaterial
-                  color="#3d1c56"
-                  attach="material"
-                  distort={0.6}
-                  speed={2}
-                />
-              </Sphere>
-            </Suspense>
-          </Canvas>
-				</Right>
-			</Container>
+        <Container>
+          <Left>
+            <Desc>- Under construction - </Desc>
+            <Title>Welcome to my space!</Title>
+            <WhatWeDo>
+              <Line src=""/>
+              <Subtitle>- I'm Sabrina!</Subtitle>
+            </WhatWeDo>
+            <Desc>I developed my webpage to showcase my skills. 
+            <br></br>Have a pleasant time exploring!
+            <br></br> <i><b>&ldquo;Creating projects and developing concepts are necessities.&rdquo;</b></i>  
+            </Desc>
+            <Button onClick={() => navigate('about-me')}>About me</Button>
+          </Left>
+          <Right>
+            <Canvas>
+              <Suspense fallback={null}>
+                <OrbitControls enableZoom={true} />
+                <ambientLight intensity={1.5} />
+                <directionalLight position={[3, 2, 1]} />
+                <Sphere args={[1, 50, 50]} scale={1.8}>
+                  <MeshDistortMaterial
+                    color="#3d1c56"
+                    attach="material"
+                    distort={0.6}
+                    speed={2}
+                  />
+                </Sphere>
+              </Suspense>
+            </Canvas>
+          </Right>
+        </Container>
 		</Section>
 	)
 }
