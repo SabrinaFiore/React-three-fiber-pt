@@ -23,7 +23,7 @@ function Home() {
       <Container>
         <Hero/>
         <Work />
-        <Carousel/>
+        {/* <Carousel/> */}
       </Container>
     </>
   )

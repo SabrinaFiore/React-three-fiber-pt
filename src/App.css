@@ -277,3 +277,25 @@ body {
 .underline {
   text-decoration: underline;
 }
+
+.separator {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  padding-top: 3rem;
+}
+
+.separator .line{
+  height: 0.5px;
+  flex: 1;
+  background-color: #3d3b3b;
+  padding: 0 0.5rem;
+}
+
+.separator h2 {
+  padding: 1rem;
+}
+
+.footerContactPh {
+  font-family: 'EB Garamond', serif !important;
+}

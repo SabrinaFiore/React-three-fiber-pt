@@ -77,24 +77,23 @@ const AboutMe = () => {
         <Title>About me</Title>
         <Desc className="wrapper">
           <Paragraph>
-          I work as a <b>UI/UX Designer and UI Developer</b>, and I designed this portfolio to showcase both my knowledge and my passions.
+          I work as a <b>UI/UX Designer, Photographer, and UI Developer</b>, and I created this portfolio to showcase my expertise and passions.
           <br></br>
           <br></br>
-          Originally from Southern Italy, I've traveled to further my education and broaden my expertise. 
-          In 2011, I attended the <b>Academy of Fine Arts in Rome</b>, where I began to deeply explore my interest in graphic arts and photography. 
+          Originally from Southern Italy, I've traveled extensively to further my education and broaden my skills. 
+          In 2011, I attended the <b>Academy of Fine Arts in Rome</b>, where I developed a deep interest in graphic arts and photography.
           <br></br>
           <br></br>
-          In 2017, I moved to Barcelona to pursue a <b>Master's degree</b>. During the program, I expanded my coding skills and immersed myself in the tech world, working as a UI Developer. 
-          At the same time, I continued to nurture my passion for photography, participating in several <b>exhibitions</b> over the last few years <Button onClick={() => navigate('../noCodeProject')}>(see the links page for more details)</Button> .
+          In 2017, I moved to Barcelona to pursue a <b>Master's degree</b>. During this program, I expanded my coding skills and immersed myself in the tech world, working as a UI/UX designer and UI Developer. 
+          At the same time, I maintained my passion for photography, continuing to capture images and participating in several <b>exhibitions</b> in recent years <Button onClick={() => navigate('../photographyProject')}>(see the links page for more details)</Button> .
           <br></br>
           <br></br>
-          I've always been able to create strong connections between developers and designers, though my focus has always leaned toward <b>design, strategic creation, user experience, and creating interfaces.</b> 
-          My past work experiences have honed my management and planning skills.
+          With 10 years of experience in high-tech and consultancy companies, my multidisciplinary expertise as both a designer and UI Developer has enabled me to improve communication gaps in project workflows. 
+          This approach has not only enhanced collaboration but has also strengthened my <b>skills in strategic creation, project management, and planning</b>.
           <br></br>
           <br></br>
-          Developing ideas has always been, for me, a way to express creativity, solve problems, and push both myself and the projects I work on to new heights. It's a journey where passion meets purpose.
+          For me, developing ideas is a way to express creativity, solve problems, and push both myself and the projects I work on to new heights. It's a journey where passion meets purpose.
           </Paragraph>
-        
         </Desc>
       </Container>
     </Section>
